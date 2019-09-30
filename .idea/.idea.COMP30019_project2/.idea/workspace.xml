@@ -13,10 +13,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Lab5_Solution/Assets/PhongShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Object/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Control.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Camera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PhongShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PointLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../COMP30019_project1/Assets/Scenes/Controls.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Lab5_Solution/Assets/CubeScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab5_Solution/Assets/GouraudShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab5_Solution/Assets/CubeScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Object/ObjectShader.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -27,6 +32,12 @@
         <option value="$PROJECT_DIR$/Assets/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Player/PlayerControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Player/Control.cs" />
+        <option value="$PROJECT_DIR$/Assets/Object/ObjectDisslove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Object/dissolveShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/PhongShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Object/Object.cs" />
+        <option value="$PROJECT_DIR$/Assets/PointLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Object/ObjectShader.shader" />
       </list>
     </option>
   </component>
@@ -78,6 +89,7 @@
       <updated>1569749626027</updated>
       <workItem from="1569749628645" duration="1699000" />
       <workItem from="1569842342206" duration="13050000" />
+      <workItem from="1569856332059" duration="7878000" />
     </task>
     <servers />
   </component>

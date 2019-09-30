@@ -6,15 +6,17 @@
     <e p="C:\Users\miker\Desktop\COMP30019_project2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Object" t="Include">
+          <e p="Object.cs" t="Include" />
+          <e p="ObjectShader.shader" t="Include" />
+        </e>
+        <e p="PhongShader.shader" t="Include" />
         <e p="Player" t="Include">
           <e p="Camera.cs" t="Include" />
           <e p="Control.cs" t="Include" />
-        </e>
-        <e p="WorldRevealSystem" t="Include">
-          <e p="dissolveShader.shader" t="Include" />
-          <e p="ObjectDisslove.cs" t="Include" />
           <e p="PlayerPos.cs" t="Include" />
         </e>
+        <e p="PointLight.cs" t="Include" />
       </e>
       <e p="COMP30019_project2.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

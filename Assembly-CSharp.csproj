@@ -65,11 +65,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Object\Object.cs" />
     <Compile Include="Assets\Player\Camera.cs" />
     <Compile Include="Assets\Player\Control.cs" />
-    <Compile Include="Assets\WorldRevealSystem\ObjectDisslove.cs" />
-    <Compile Include="Assets\WorldRevealSystem\PlayerPos.cs" />
-    <None Include="Assets\WorldRevealSystem\dissolveShader.shader" />
+    <Compile Include="Assets\Player\PlayerPos.cs" />
+    <Compile Include="Assets\PointLight.cs" />
+    <None Include="Assets\PhongShader.shader" />
+    <None Include="Assets\Object\ObjectShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/miker/Desktop/COMP30019_project2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
