@@ -6,6 +6,9 @@ public class Control : MonoBehaviour
 {
 
     public Rigidbody rb;
+    
+
+
     public float speed;
     private float ShowingEnviroment = 0;
     public float RevealSpeed = 3;
@@ -21,7 +24,10 @@ public class Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Movenment of Player
+
+        
+
+        //Movement of Player
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
