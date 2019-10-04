@@ -9,6 +9,8 @@ public class Camera : MonoBehaviour
     private Vector3 offset;
     private float moveAround;
 
+    public float speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +22,12 @@ public class Camera : MonoBehaviour
     void LateUpdate()
     {
         GameObject player = GameObject.Find("Player");
+        float playerX = player.transform.position.x;
+        float playerZ = player.transform.position.z;
 
-        offset += new Vector3(5 * Time.deltaTime, 0, 0);
+        Quaternion angle = Quaternion.AngleAxis(Input.GetAxis("Mouse X")*speed, Vector3.up);
+        offset = angle * offset;
+        
 
         transform.position = player.transform.position + offset;
         transform.LookAt(player.transform);

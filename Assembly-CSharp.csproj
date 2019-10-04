@@ -68,7 +68,6 @@
     <Compile Include="Assets\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Object\Object.cs" />
     <Compile Include="Assets\Player\Camera.cs" />
-    <Compile Include="Assets\Player\CameraRotator.cs" />
     <Compile Include="Assets\Player\Control.cs" />
     <Compile Include="Assets\Player\PlayerPos.cs" />
     <Compile Include="Assets\Player\PointLight.cs" />
