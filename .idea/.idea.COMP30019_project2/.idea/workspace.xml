@@ -14,14 +14,27 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Lab5_Solution/Assets/PhongShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Object/Object.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/SceneControllers/InGameController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/GlobalOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Control.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Player/Camera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PhongShader.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PointLight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/ScoreManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/ProjectileController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/EnemyController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/IncrementScoreOnDestroy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/HealthManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy/EnemyControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../COMP30019_project1/Assets/Scenes/Controls.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/SwarmManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Player/PointLight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/DestroyWhenParticlesFinished.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Player/PlayerPos.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Lab5_Solution/Assets/GouraudShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Lab5_Solution/Assets/CubeScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Object/ObjectShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/melee.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Player/DiaobleCam.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -31,13 +44,22 @@
         <option value="$PROJECT_DIR$/Assets/dissolveShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Player/PlayerControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Player/Control.cs" />
         <option value="$PROJECT_DIR$/Assets/Object/ObjectDisslove.cs" />
         <option value="$PROJECT_DIR$/Assets/Object/dissolveShader.shader" />
         <option value="$PROJECT_DIR$/Assets/PhongShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Object/Object.cs" />
         <option value="$PROJECT_DIR$/Assets/PointLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/wall.cs" />
         <option value="$PROJECT_DIR$/Assets/Object/ObjectShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Player/PointLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player/Camera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player/DiaobleCam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemy/EnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemy/EnemyControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/melee.cs" />
+        <option value="$PROJECT_DIR$/Assets/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player/Control.cs" />
       </list>
     </option>
   </component>
@@ -90,6 +112,8 @@
       <workItem from="1569749628645" duration="1699000" />
       <workItem from="1569842342206" duration="13050000" />
       <workItem from="1569856332059" duration="7878000" />
+      <workItem from="1570014378902" duration="2414000" />
+      <workItem from="1570179269814" duration="19290000" />
     </task>
     <servers />
   </component>

@@ -5,8 +5,8 @@ Shader "Custom/ObjectShader"
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
-        _PointLightColor("Point Light Color", Color) = (0, 0, 0)
-		_PointLightPosition("Point Light Position", Vector) = (0.0, 0.0, 0.0)
+        
+		
     }
     
     SubShader

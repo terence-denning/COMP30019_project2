@@ -14,5 +14,7 @@ public class PointLight : MonoBehaviour {
     private void Update()
     {
         Shader.SetGlobalFloat("_LightRange",LightRange);
+        Shader.SetGlobalVector("_PointLightPosition",transform.position);
+        Shader.SetGlobalColor("_PointLightColor",color);
     }
 }
