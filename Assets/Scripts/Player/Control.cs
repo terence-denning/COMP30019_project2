@@ -36,7 +36,8 @@ public class Control : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         //rb.AddForce(movement * speed);
-        rb.velocity = movement * speed;
+        rb.velocity = movement * (speed);
+       // rb.position=(movement * (speed/10) + transform.position);
         /*if( Input.GetKey(KeyCode.Space) )
         {
             if( this.transform.position.y < 1)
