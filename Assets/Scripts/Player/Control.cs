@@ -8,12 +8,12 @@ public class Control : MonoBehaviour
 
     private Rigidbody rb;
     public float speed;
-    private float ShowingEnviroment = 0;
-    public float RevealSpeed = 3;
+    public float ShowingEnviroment = 0;
+    //public float RevealSpeed = 3;
     private bool trigger = false;
-    public float RevealMaxRange = 10;
-    public float RevealMinRange = 0;
-
+   // public float RevealMaxRange = 10;
+   // public float RevealMinRange = 0;
+   // public ProjectileController template;
     private Camera playcam;
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,9 @@ public class Control : MonoBehaviour
         Vector2 mouseScreenPos = Input.mousePosition;
         float distanceFromCameraToXZPlane = playcam.transform.position.y;
         Vector3 screenPosWithZDistance = (Vector3)mouseScreenPos + (Vector3.forward * distanceFromCameraToXZPlane);
-        transform.LookAt(playcam.ScreenToWorldPoint(screenPosWithZDistance),Vector3.up);
+        Vector3 fixYcam = playcam.ScreenToWorldPoint(screenPosWithZDistance);
+        fixYcam.y = this.transform.position.y;
+        transform.LookAt(fixYcam,Vector3.up);
         //Movenment of Player
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -46,8 +48,9 @@ public class Control : MonoBehaviour
         }*/
         resetOnFall();
         //EOF Movement
-        //Player On fire
-        if (Input.GetKeyDown(KeyCode.F))
+        //Player reveal
+        Shader.SetGlobalFloat("_Radius", ShowingEnviroment);
+       /* if (Input.GetKeyDown(KeyCode.F))
         {
             if (trigger)
             {
@@ -75,8 +78,17 @@ public class Control : MonoBehaviour
                 ShowingEnviroment = RevealMinRange;
             }
             Shader.SetGlobalFloat("_Radius",ShowingEnviroment);
-        }
-        
+        }*/
+        //Range Fire
+        /*if (Input.GetButton("Fire2"))
+        {
+            Vector3 fireToWorldPos = Camera.main.ScreenToWorldPoint(screenPosWithZDistance);
+
+
+            ProjectileController p = Instantiate<ProjectileController>(template);
+            p.transform.position = this.transform.position + playcam.ScreenToWorldPoint(screenPosWithZDistance).normalized ;
+            p.velocity = (fireToWorldPos - this.transform.position).normalized * 10.0f;
+        }*/
     }
 
     //Reset

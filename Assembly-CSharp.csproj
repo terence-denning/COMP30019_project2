@@ -65,7 +65,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Gun.cs" />
+    <Compile Include="Assets\Interactable.cs" />
+    <Compile Include="Assets\NPC.cs" />
     <Compile Include="Assets\Object\Object.cs" />
+    <Compile Include="Assets\PickItem.cs" />
+    <Compile Include="Assets\ProjectileController.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyControl.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
