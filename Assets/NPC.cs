@@ -7,7 +7,7 @@ public class NPC : MonoBehaviour
 {
     void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && Input.GetKeyDown(KeyCode.E)){
+        if (other.tag == "Player" && Input.GetKeyDown(KeyCode.F)){
             Interact();
         }
     }
