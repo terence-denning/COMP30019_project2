@@ -6,6 +6,7 @@
     <e p="C:\Users\miker\Desktop\COMP30019_project2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="LightShader.shader" t="Include" />
         <e p="Object" t="Include">
           <e p="Object.cs" t="Include" />
           <e p="ObjectShader.shader" t="Include" />

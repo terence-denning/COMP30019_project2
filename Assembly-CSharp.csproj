@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Player\PointLight.cs" />
     <Compile Include="Assets\SpawnEnemy.cs" />
     <None Include="Assets\Object\ObjectShader.shader" />
+    <None Include="Assets\LightShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/miker/Desktop/COMP30019_project2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

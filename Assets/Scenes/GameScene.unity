@@ -779,7 +779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 0}
-  LightRange: 30
+  LightRange: 2
 --- !u!108 &650936331
 Light:
   m_ObjectHideFlags: 0
