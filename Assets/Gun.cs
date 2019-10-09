@@ -7,19 +7,43 @@ public class Gun : MonoBehaviour
     public int damage = 50;
     private Animator ani;
     public float intervel;
+    private float startintervel;
     private float currentshot ;
     public ProjectileController template;
-    public 
+    private float speedup;
+    private float timeOfspeedup;
+    private bool speedupItem = false;
     // Start is called before the first frame update
     void Start()
     {
         ani = GetComponent<Animator>();
         currentshot = intervel;
+        startintervel = intervel;
     }
 
+    public void speedupitem(bool trigger, float tos, float speed)
+    {
+        this.speedup = speed;
+        this.timeOfspeedup = tos;
+        this.speedupItem = trigger;
+    }
     // Update is called once per frame
     void Update()
-    {    
+    {
+        //PickupSpeedBosster
+        if (speedupItem)
+        {
+            intervel  -= 0.1f*speedup;
+            speedupItem = false;
+        }
+
+        timeOfspeedup -= Time.deltaTime ;
+        if (timeOfspeedup <= 0)
+        {
+            intervel = startintervel;
+        }
+        
+        //Fire Gun
         if (Input.GetButton("Fire2"))
         {
             Vector2 mouseScreenPos = Input.mousePosition;
@@ -33,7 +57,7 @@ public class Gun : MonoBehaviour
                 ProjectileController p = Instantiate<ProjectileController>(template);
                 p.transform.position = this.transform.position;
                 p.transform.rotation = transform.localRotation;
-                p.velocity = (transform.forward).normalized * 10.0f;
+                p.GetComponent<Rigidbody>().velocity = (transform.forward).normalized * 5.0f;
                 currentshot = 0;
             }
 
@@ -43,6 +67,7 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonUp("Fire2"))
         {
             ani.SetBool("Dawrgun",false);
+            currentshot = intervel;
         }
     }
 }

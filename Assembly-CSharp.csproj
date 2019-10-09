@@ -65,12 +65,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EnemyDrop.cs" />
     <Compile Include="Assets\Gun.cs" />
-    <Compile Include="Assets\Interactable.cs" />
+    <Compile Include="Assets\InteractItem.cs" />
     <Compile Include="Assets\NPC.cs" />
     <Compile Include="Assets\Object\Object.cs" />
-    <Compile Include="Assets\PickItem.cs" />
+    <Compile Include="Assets\PlayerStat.cs" />
     <Compile Include="Assets\ProjectileController.cs" />
+    <Compile Include="Assets\RedPotion.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyControl.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
@@ -80,6 +82,9 @@
     <Compile Include="Assets\Scripts\Player\PlayerPos.cs" />
     <Compile Include="Assets\Scripts\Player\PointLight.cs" />
     <Compile Include="Assets\SpawnEnemy.cs" />
+    <Compile Include="Assets\SpeedPotion.cs" />
+    <Compile Include="Assets\Stat.cs" />
+    <Compile Include="Assets\StateBonus.cs" />
     <None Include="Assets\Object\ObjectShader.shader" />
     <None Include="Assets\LightShader.shader" />
     <Reference Include="Unity.Timeline.Editor">

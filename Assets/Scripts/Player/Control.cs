@@ -9,23 +9,26 @@ public class Control : MonoBehaviour
     private Rigidbody rb;
     public float speed;
     public float ShowingEnviroment = 0;
-    //public float RevealSpeed = 3;
     private bool trigger = false;
-   // public float RevealMaxRange = 10;
-   // public float RevealMinRange = 0;
-   // public ProjectileController template;
     private Camera playcam;
-    // Start is called before the first frame update
+    private HealthManager HM;
+    private PlayerStat PS;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         playcam = GameObject.Find("PlayerCamera").GetComponent<Camera>();
+        PS = GetComponent<PlayerStat>();
+        HM = GetComponent<HealthManager>();
+        HM.MaximumHP(PS.stats[0].GetCalculateStat());
+        //test
+        HM.currentHealth -= 50;
     }
     
 
     // Update is called once per frame
     void Update()
     {
+        
         //Look accroding to mouse;
         Vector2 mouseScreenPos = Input.mousePosition;
         float distanceFromCameraToXZPlane = playcam.transform.position.y;

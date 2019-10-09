@@ -6,16 +6,18 @@
     <e p="C:\Users\miker\Desktop\COMP30019_project2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="EnemyDrop.cs" t="Include" />
         <e p="Gun.cs" t="Include" />
-        <e p="Interactable.cs" t="Include" />
+        <e p="InteractItem.cs" t="Include" />
         <e p="LightShader.shader" t="Include" />
         <e p="NPC.cs" t="Include" />
         <e p="Object" t="Include">
           <e p="Object.cs" t="Include" />
           <e p="ObjectShader.shader" t="Include" />
         </e>
-        <e p="PickItem.cs" t="Include" />
+        <e p="PlayerStat.cs" t="Include" />
         <e p="ProjectileController.cs" t="Include" />
+        <e p="RedPotion.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Enemy" t="Include">
             <e p="EnemyControl.cs" t="Include" />
@@ -31,6 +33,9 @@
           </e>
         </e>
         <e p="SpawnEnemy.cs" t="Include" />
+        <e p="SpeedPotion.cs" t="Include" />
+        <e p="Stat.cs" t="Include" />
+        <e p="StateBonus.cs" t="Include" />
       </e>
       <e p="COMP30019_project2.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

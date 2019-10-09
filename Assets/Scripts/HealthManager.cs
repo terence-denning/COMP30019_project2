@@ -31,11 +31,25 @@ public class HealthManager : MonoBehaviour {
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
-           // this.zeroHealthEvent.Invoke();
+           this.zeroHealthEvent.Invoke();
            Destroy(this.gameObject);
         }
     }
 
+    public void MaximumHP(int _maxHP)
+    {
+        startingHealth = _maxHP;
+        currentHealth = _maxHP;
+    }
+
+    public void RecoverHealth(int heal)
+    {
+        currentHealth += heal;
+        if (currentHealth > startingHealth)
+        {
+            currentHealth = startingHealth;
+        }
+    }
     // Get the current health of the object
     public int GetHealth()
     {

@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class melee : MonoBehaviour
 {
-    public int damage = 50;
+    private int damage;
     private Animator ani;
-
+    private GameObject player;
     private void Start()
     {
         ani = GetComponent<Animator>();
+        player = GameObject.FindWithTag("Player");
+        damage = player.GetComponent<PlayerStat>().stats[1].GetCalculateStat();
     }
 
     void Update()
@@ -28,6 +30,7 @@ public class melee : MonoBehaviour
         {
             HealthManager hm = other.GetComponent<HealthManager>();
             hm.ApplyDamage(damage);
+            Debug.Log("hit damage = " + damage);
         }
     }
 }
