@@ -18,10 +18,12 @@
     <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/GlobalOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SpawnEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProjectileController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RoomTemp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnemyDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/EnemyController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LightShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerStat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/DiaobleCam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Stat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/SwarmManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -37,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/InteractItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Control.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Object/ObjectShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RoomSpwan.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,6 +62,9 @@
         <option value="$PROJECT_DIR$/Assets/SpeedPotion.cs" />
         <option value="$PROJECT_DIR$/Assets/RedPotion.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyDrop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/DiaobleCam.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomTemp.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomSpwan.cs" />
       </list>
     </option>
   </component>
@@ -68,6 +74,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -109,6 +116,7 @@
       <updated>1570620909037</updated>
       <workItem from="1570620918598" duration="16357000" />
       <workItem from="1570639283800" duration="2936000" />
+      <workItem from="1570872901195" duration="6265000" />
     </task>
     <servers />
   </component>

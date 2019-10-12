@@ -18,6 +18,8 @@
         <e p="PlayerStat.cs" t="Include" />
         <e p="ProjectileController.cs" t="Include" />
         <e p="RedPotion.cs" t="Include" />
+        <e p="RoomSpwan.cs" t="Include" />
+        <e p="RoomTemp.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Enemy" t="Include">
             <e p="EnemyControl.cs" t="Include" />

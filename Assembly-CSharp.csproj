@@ -73,6 +73,8 @@
     <Compile Include="Assets\PlayerStat.cs" />
     <Compile Include="Assets\ProjectileController.cs" />
     <Compile Include="Assets\RedPotion.cs" />
+    <Compile Include="Assets\RoomSpwan.cs" />
+    <Compile Include="Assets\RoomTemp.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyControl.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
