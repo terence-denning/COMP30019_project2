@@ -65,6 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AddRoom.cs" />
     <Compile Include="Assets\EnemyDrop.cs" />
     <Compile Include="Assets\Gun.cs" />
     <Compile Include="Assets\InteractItem.cs" />
@@ -73,14 +74,15 @@
     <Compile Include="Assets\PlayerStat.cs" />
     <Compile Include="Assets\ProjectileController.cs" />
     <Compile Include="Assets\RedPotion.cs" />
+    <Compile Include="Assets\RoomDestroyer.cs" />
     <Compile Include="Assets\RoomSpwan.cs" />
     <Compile Include="Assets\RoomTemp.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyControl.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Scripts\melee.cs" />
-    <Compile Include="Assets\Scripts\Player\Control.cs" />
     <Compile Include="Assets\Scripts\Player\DiaobleCam.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerPos.cs" />
     <Compile Include="Assets\Scripts\Player\PointLight.cs" />
     <Compile Include="Assets\SpawnEnemy.cs" />

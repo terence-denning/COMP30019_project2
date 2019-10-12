@@ -14,15 +14,31 @@ public class RoomSpwan : MonoBehaviour
     private RoomTemp template;
     private int ran;
     private bool spawned = false;
-    
+    public float waittime = 4f;
     
 
     void Start()
     {
+        Destroy(gameObject,waittime);
         template = GameObject.FindGameObjectWithTag("Room").GetComponent<RoomTemp>();
-        Invoke("Spwan",0.2f);
+        Invoke("Spwan",0.1f);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+       /* if (other.CompareTag("SpwanPoint"))
+        {
+            if (other.GetComponent<RoomSpwan>().spawned == false && spawned == false)
+            {
+                Instantiate(template.closeRm, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            }
+
+            spawned = true;
+
+        }*/
+       Destroy(gameObject);
+    }
     void Spwan()
     {
         if(spawned == false)
@@ -53,18 +69,5 @@ public class RoomSpwan : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("SpwanPoint"))
-        {
-            if (other.GetComponent<RoomSpwan>().spawned == false && spawned == false)
-            {
-                Instantiate(template.closeRm, transform.position, Quaternion.identity);
-                Destroy(gameObject);
-            }
 
-            spawned = true;
-
-        }
-    }
 }

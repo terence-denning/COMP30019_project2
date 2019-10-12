@@ -3,32 +3,83 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Control : MonoBehaviour
+public class PlayerControl : MonoBehaviour
 {
 
     private Rigidbody rb;
     public float speed;
     public float ShowingEnviroment = 0;
-    private bool trigger = false;
     private Camera playcam;
     private HealthManager HM;
     private PlayerStat PS;
+    private melee Melee;
+    private Gun gun;
+    private PointLight PL;
+    private bool ModifyStatus = true;
+    private bool OverKill;
+    private float lerpindex;
+    private float OverKillBar;
+    public float Overkillbarreducespeed;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         playcam = GameObject.Find("PlayerCamera").GetComponent<Camera>();
         PS = GetComponent<PlayerStat>();
         HM = GetComponent<HealthManager>();
-        HM.MaximumHP(PS.stats[0].GetCalculateStat());
-        //test
-        HM.currentHealth -= 50;
+        Melee = GetComponentInChildren<melee>();
+        gun = GetComponentInChildren<Gun>();
+        PL = GetComponentInChildren<PointLight>();
+        OverKillBar = 0;
     }
-    
+
+    public void IncreaseOverKill(float amount)
+    {
+        if (OverKill == false)
+        {
+            OverKillBar += amount;
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
+        //PlayerStatusUpdate
+        if (ModifyStatus)
+        {
+            HM.MaximumHP(PS.stats[0].GetCalculateStat());
+            Melee.damage = PS.stats[1].GetCalculateStat();
+            gun.damage = PS.stats[2].GetCalculateStat();
+            ModifyStatus = false;
+        }
+        //OverKill Session
+        if (OverKillBar >= 100)
+        {
+            OverKillBar = 100;
+        }
         
+        Debug.Log("Remain bar " + OverKillBar);
+        lerpindex = OverKillBar / 100;
+        PL.color = Color.Lerp(Color.black, Color.red, lerpindex);
+        PL.LightRange = Mathf.Lerp(3, 5, lerpindex);
+        if (OverKill)
+        {
+            gun.overkill = true;
+            Melee.Overkill = true;
+            OverKillBar -= 0.1f * Overkillbarreducespeed;
+        }
+
+        if (OverKillBar < 1f)
+        {
+            gun.overkill = false;
+            Melee.Overkill = false;
+            OverKill = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q) && OverKillBar >= 99.5f)
+        {
+            OverKill = true;
+        }
+
         //Look accroding to mouse;
         Vector2 mouseScreenPos = Input.mousePosition;
         float distanceFromCameraToXZPlane = playcam.transform.position.y;

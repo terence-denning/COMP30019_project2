@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 8737882138573684228}
   - component: {fileID: 8737882138573684229}
   - component: {fileID: 8737882138573684226}
-  - component: {fileID: 8737882138573684227}
   - component: {fileID: 8737882138573684224}
   - component: {fileID: 8737882138573684225}
   - component: {fileID: 8737882138573684238}
   - component: {fileID: 8737882138573684239}
   - component: {fileID: 8737882138573684231}
+  - component: {fileID: 993086114}
   m_Layer: 0
   m_Name: SimpleEnemyTemplate
   m_TagString: Enemy
@@ -32,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8737882138573684236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5906484, y: 0.146, z: 95.110146}
+  m_LocalPosition: {x: -1.5906484, y: 1, z: 95.110146}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,19 +83,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8737882138573684227
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8737882138573684236}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8737882138573684224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,12 +90,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8737882138573684236}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dce757aff71c2940909f1d8e810c859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  increaseOverKill: 30
 --- !u!114 &8737882138573684225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,18 +126,7 @@ MonoBehaviour:
   startingHealth: 100
   zeroHealthEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8737882138573684231}
-        m_MethodName: DropItem
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   currentHealth: 0
@@ -168,7 +144,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 122
   m_CollisionDetection: 2
 --- !u!114 &8737882138573684231
 MonoBehaviour:
@@ -182,5 +158,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083598696e0468e43800522f2f6a05c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item0: {fileID: 7783777271028514152, guid: 8ebf7c7de9f2a4c42b63f9f65b81aaa3, type: 3}
-  item1: {fileID: 3449974698987505882, guid: e1d9ddb92be6c5d4ca7cf50ae41c8d93, type: 3}
+  items:
+  - {fileID: 3449974698987505882, guid: e1d9ddb92be6c5d4ca7cf50ae41c8d93, type: 3}
+  - {fileID: 7783777271028514152, guid: 8ebf7c7de9f2a4c42b63f9f65b81aaa3, type: 3}
+--- !u!136 &993086114
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737882138573684236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

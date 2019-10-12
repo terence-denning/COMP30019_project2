@@ -6,6 +6,7 @@
     <e p="C:\Users\miker\Desktop\COMP30019_project2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AddRoom.cs" t="Include" />
         <e p="EnemyDrop.cs" t="Include" />
         <e p="Gun.cs" t="Include" />
         <e p="InteractItem.cs" t="Include" />
@@ -18,6 +19,7 @@
         <e p="PlayerStat.cs" t="Include" />
         <e p="ProjectileController.cs" t="Include" />
         <e p="RedPotion.cs" t="Include" />
+        <e p="RoomDestroyer.cs" t="Include" />
         <e p="RoomSpwan.cs" t="Include" />
         <e p="RoomTemp.cs" t="Include" />
         <e p="Scripts" t="Include">
@@ -28,8 +30,8 @@
           <e p="HealthManager.cs" t="Include" />
           <e p="melee.cs" t="Include" />
           <e p="Player" t="Include">
-            <e p="Control.cs" t="Include" />
             <e p="DiaobleCam.cs" t="Include" />
+            <e p="PlayerControl.cs" t="Include" />
             <e p="PlayerPos.cs" t="Include" />
             <e p="PointLight.cs" t="Include" />
           </e>
