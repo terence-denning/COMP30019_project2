@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8737882138573684226}
   - component: {fileID: 8737882138573684224}
   - component: {fileID: 8737882138573684225}
+  - component: {fileID: 5466018910045935729}
   - component: {fileID: 8737882138573684238}
   - component: {fileID: 8737882138573684239}
   - component: {fileID: 8737882138573684231}
@@ -111,6 +112,18 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: 113d7566978eda641ae00549eb34f260, type: 3}
   maintex: {fileID: 2800000, guid: b054120c308283b48aed79e331673473, type: 3}
   pointLight: {fileID: 0}
+--- !u!114 &5466018910045935729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737882138573684236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be2cee7bc28708742a90c2ff1bb2d117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8737882138573684238
 MonoBehaviour:
   m_ObjectHideFlags: 0
