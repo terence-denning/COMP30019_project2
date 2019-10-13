@@ -6,7 +6,7 @@ using UnityEngine;
 public class SimpleEnemyMovement : MonoBehaviour
 {
 
-    public GameObject explosion;
+    public GameObject Explosion;
 
     // Update is called once per frame
     void Update()
@@ -57,10 +57,11 @@ public class SimpleEnemyMovement : MonoBehaviour
         if ((Math.Abs(obj1.x - obj2.x) < 0.5f) && (Math.Abs(obj1.z - obj2.z) < 0.5f))
         {
             // Create explosion effect
-            GameObject exp = Instantiate(this.explosion);
+            GameObject exp = Instantiate(this.Explosion);
             exp.transform.position = this.transform.position;
-
+            
             Destroy(this.gameObject);
+            Destroy(exp, 0.5f);
         }
     }
 }
