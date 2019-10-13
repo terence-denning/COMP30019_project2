@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\miker\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\miker\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_COMP30019_project2.503258909.00" t="ExcludeRecursive" />
-    <e p="C:\Users\miker\Desktop\COMP30019_project2" t="IncludeRecursive">
+    <e p="C:\Users\Mike Yu\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Mike Yu\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_COMP30019_project2.-407714201.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Mike Yu\Desktop\COMP30019_project2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AddRoom.cs" t="Include" />
+        <e p="EnemyDrop.cs" t="Include" />
         <e p="Gun.cs" t="Include" />
         <e p="Interactable.cs" t="Include" />
+        <e p="InteractItem.cs" t="Include" />
         <e p="LightShader.shader" t="Include" />
         <e p="NPC.cs" t="Include" />
         <e p="Object" t="Include">
@@ -15,7 +18,12 @@
           <e p="ObjectShader.shader" t="Include" />
         </e>
         <e p="PickItem.cs" t="Include" />
+        <e p="PlayerStat.cs" t="Include" />
         <e p="ProjectileController.cs" t="Include" />
+        <e p="RedPotion.cs" t="Include" />
+        <e p="RoomDestroyer.cs" t="Include" />
+        <e p="RoomSpwan.cs" t="Include" />
+        <e p="RoomTemp.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Enemy" t="Include">
             <e p="EnemyControl.cs" t="Include" />
@@ -24,13 +32,39 @@
           <e p="HealthManager.cs" t="Include" />
           <e p="melee.cs" t="Include" />
           <e p="Player" t="Include">
-            <e p="Control.cs" t="Include" />
             <e p="DiaobleCam.cs" t="Include" />
+            <e p="PlayerControl.cs" t="Include" />
             <e p="PlayerPos.cs" t="Include" />
             <e p="PointLight.cs" t="Include" />
           </e>
         </e>
         <e p="SpawnEnemy.cs" t="Include" />
+        <e p="SpeedPotion.cs" t="Include" />
+        <e p="Stat.cs" t="Include" />
+        <e p="StateBonus.cs" t="Include" />
+        <e p="UI" t="Include">
+          <e p="DestropBGM.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="Healthbar" t="Include">
+              <e p="Demo.cs" t="Include" />
+            </e>
+            <e p="ShieldBarCircle" t="Include">
+              <e p="ProgressBarCircle.cs" t="Include" />
+            </e>
+            <e p="UI_CScript" t="Include">
+              <e p="BGMgenerator.cs" t="Include" />
+              <e p="ClickController.cs" t="Include" />
+              <e p="DontDestroy.cs" t="Include" />
+              <e p="dunDestroy.cs" t="Include" />
+              <e p="GlobalOptions.cs" t="Include" />
+              <e p="GUI_Demo.cs" t="Include" />
+              <e p="MainMenuControllor.cs" t="Include" />
+              <e p="OptionsControllor.cs" t="Include" />
+              <e p="PauseMenu.cs" t="Include" />
+              <e p="ProgressBar.cs" t="Include" />
+            </e>
+          </e>
+        </e>
       </e>
       <e p="COMP30019_project2.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

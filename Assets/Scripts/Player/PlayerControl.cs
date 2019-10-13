@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlayerControl : MonoBehaviour
     private bool OverKill;
     private float lerpindex;
     private float OverKillBar;
+    public UnityEvent ESCBotton;
     public float Overkillbarreducespeed;
     void Start()
     {
@@ -143,6 +145,10 @@ public class PlayerControl : MonoBehaviour
             p.transform.position = this.transform.position + playcam.ScreenToWorldPoint(screenPosWithZDistance).normalized ;
             p.velocity = (fireToWorldPos - this.transform.position).normalized * 10.0f;
         }*/
+        if (Input.GetKeyDown(KeyCode.Escape))
+        { 
+            ESCBotton.Invoke();
+        }
     }
 
     //Reset

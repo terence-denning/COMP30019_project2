@@ -21,8 +21,7 @@ public class EnemyDrop : MonoBehaviour
 
         transform.rotation *= Quaternion.Euler(0,0,-30);
         GameObject go = Instantiate(dropitem, transform.position, transform.rotation) as GameObject;
-        go.AddComponent<RedPotion>();
-        
+
 
     }
 
