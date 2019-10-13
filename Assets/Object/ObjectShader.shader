@@ -207,15 +207,14 @@ Shader "Custom/ObjectShader"
             float attenuation = 1 - saturate(dist / _LightRange); 
             float Ka = 1;
             float3 amb = v.color.rgb * UNITY_LIGHTMODEL_AMBIENT.rgb * Ka;
-            float fAtt = 0.5;
-            float Kd = 0.5;
+            float fAtt = 1;
+            float Kd = 1;
             float3 L = normalize(_PointLightPosition - worldVertex.xyz);
             float LdotN = dot(L, worldNormal.xyz);
             float3 dif = fAtt * _PointLightColor.rgb * Kd * v.color.rgb * saturate(LdotN);
-            float Ks = 0.5;
-            float specN = 5; // Values>>1 give tighter highlights
+            float Ks = 1;
+            float specN = 10; // Values>>1 give tighter highlights
             float3 V = normalize(_WorldSpaceCameraPos - worldVertex.xyz);
-            specN = 25; 
             float3 H = normalize(V + L);
             float3 spe = fAtt * _PointLightColor.rgb * Ks * pow(saturate(dot(worldNormal, H)), specN);
             o.customColor.rgb = attenuation * (MatD+amb.rgb + dif.rgb + spe.rgb);
@@ -226,14 +225,13 @@ Shader "Custom/ObjectShader"
         
         void surf (Input IN, inout SurfaceOutput o)
         {
-             float dist = distance(_PlayerPos, IN.worldPos);
+             float distan = distance(_PlayerPos, IN.worldPos);
+             half disslov = abs(snoise(IN.worldPos));
              
-             half dissolve_value = abs(snoise(IN.worldPos));
+             float clip1 = (disslov - (distan - _Radius) /  _Radius) * step(  _Radius , distan ) ;
+             clip(clip1);
              
-             float clip_value = (dissolve_value - (dist -  _Radius) /  _Radius) * step(  _Radius , dist ) ;
-             clip(clip_value);
-             
-             o.Emission = float3(1, 1, 1) * step( clip_value , 0.05f ) * step( _Radius, dist);
+             o.Emission = float3(1, 1, 1) * step( clip1 , 0.05f ) * step( _Radius, distan);
              
              fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
              o.Albedo = c.rgb + IN.customColor;

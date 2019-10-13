@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - SpwanPoint
+  - Room
+  - Wall
+  - PointLight
   layers:
   - Default
   - TransparentFX
