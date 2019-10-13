@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpawnEnemy : MonoBehaviour
 {
@@ -8,7 +9,6 @@ public class SpawnEnemy : MonoBehaviour
     public float spawnTime = 3f;    
     public Transform[] spawnPoints;
 
-    public PointLight Ponintlight;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +24,5 @@ public class SpawnEnemy : MonoBehaviour
         int spawnPointIndex = Random.Range (0, spawnPoints.Length);
         // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
         Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
-        enemy.GetComponent<Object>().pointLight = this.Ponintlight;
     }
 }

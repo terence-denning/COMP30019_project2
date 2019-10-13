@@ -13,7 +13,7 @@ public class Object : MonoBehaviour
         Renderer r = this.gameObject.GetComponent<Renderer>();
         r.material.shader = this.shader;
         r.material.SetTexture("_MainTex",this.maintex);
-        
+        pointLight = GameObject.FindGameObjectWithTag("PointLight").GetComponent<PointLight>();
     }
 
     // Update is called once per frame

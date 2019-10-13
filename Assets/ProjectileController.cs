@@ -6,7 +6,7 @@ public class ProjectileController : MonoBehaviour {
 
     public Vector3 velocity;
 
-    public int damageAmount = 10;
+    public int damageAmount ;
     public string tagToDamage;
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class ProjectileController : MonoBehaviour {
             // Destroy self
             Destroy(this.gameObject);
         }
-        else
+        else if(col.gameObject.tag == "Wall")
         {
             Destroy(this.gameObject);
         }

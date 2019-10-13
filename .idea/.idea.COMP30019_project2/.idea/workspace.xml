@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867c5d9-9de8-4216-98ff-59b4239d159e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,17 +12,69 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/SpeedPotion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab5_Solution/Assets/PhongShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Object/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/GlobalOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/SwarmManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SpawnEnemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProjectileController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RoomTemp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EnemyDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/EnemyController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LightShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerStat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/DiaobleCam.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Stat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/SwarmManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/DestroyWhenParticlesFinished.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lab08_Solution/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/melee.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StateBonus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Gun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AddRoom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RedPotion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RoomDestroyer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C0EF81E1-639B-423A-B35C-E0E4C08B5B7A/4e/8751d979/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NPC.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/InteractItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Object/ObjectShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RoomSpwan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PointLight.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/NewReveal.shader" />
+        <option value="$PROJECT_DIR$/Assets/newreveal.shader" />
+        <option value="$PROJECT_DIR$/Assets/LightShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Object/ObjectShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Stat.cs" />
+        <option value="$PROJECT_DIR$/Assets/PickItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/StateBonus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Interact.cs" />
+        <option value="$PROJECT_DIR$/Assets/InteractItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/SpeedPotion.cs" />
+        <option value="$PROJECT_DIR$/Assets/RedPotion.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomSpwan.cs" />
+        <option value="$PROJECT_DIR$/Assets/AddRoom.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomDestroyer.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerStat.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProjectileController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Object/Object.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawnEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomTemp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/DiaobleCam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Control.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/melee.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControl.cs" />
       </list>
     </option>
   </component>
@@ -31,6 +84,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,10 +106,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="4076">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="4076" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -64,8 +118,36 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6867c5d9-9de8-4216-98ff-59b4239d159e" name="Default Changelist" comment="" />
+      <created>1570620909037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570620909037</updated>
+      <workItem from="1570620918598" duration="16357000" />
+      <workItem from="1570639283800" duration="2936000" />
+      <workItem from="1570872901195" duration="6265000" />
+      <workItem from="1570883535786" duration="14108000" />
+      <workItem from="1570897811707" duration="495000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>
