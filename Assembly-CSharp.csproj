@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Assets\AddRoom.cs" />
     <Compile Include="Assets\Boss2Movement.cs" />
+    <Compile Include="Assets\Boss3Movement.cs" />
     <Compile Include="Assets\BossMovement.cs" />
     <Compile Include="Assets\EnemyDrop.cs" />
     <Compile Include="Assets\EnemyShoot.cs" />
