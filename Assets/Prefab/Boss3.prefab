@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1257604449991226644}
   - component: {fileID: 1257604449991226640}
   - component: {fileID: 1257604449991226641}
+  - component: {fileID: 909642778}
+  - component: {fileID: 909642785}
   m_Layer: 0
   m_Name: Boss3
   m_TagString: Untagged
@@ -108,8 +110,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!114 &1257604449991226641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,4 +125,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleEnemyTemplate: {fileID: 8737882138573684236, guid: e6b9855994eae1c49a378c4840fd97b8,
+    type: 3}
+--- !u!114 &909642778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257604449991226647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f61ad681475204c4583b03465f9dd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+--- !u!114 &909642785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257604449991226647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b9e4960aa2e8f4eb56a61ef557e80d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7541496831195106679, guid: c86c7ad2a1df289499f5ac9850c30e85,
     type: 3}

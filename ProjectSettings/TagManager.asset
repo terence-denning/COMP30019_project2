@@ -9,6 +9,8 @@ TagManager:
   - Room
   - Wall
   - PointLight
+  - music
+  - Sword
   layers:
   - Default
   - TransparentFX

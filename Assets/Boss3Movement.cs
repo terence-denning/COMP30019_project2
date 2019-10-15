@@ -30,5 +30,6 @@ public class Boss3Movement : MonoBehaviour
                     );
         }
         time++;
+        
     }
 }

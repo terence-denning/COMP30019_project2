@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 8224831459321457499}
   - component: {fileID: 8224831459321457511}
   - component: {fileID: 8224831459321457504}
+  - component: {fileID: 305780671}
+  - component: {fileID: 305780672}
   m_Layer: 0
   m_Name: Boss1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,8 +109,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!114 &8224831459321457504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,3 +125,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7541496831195106679, guid: c86c7ad2a1df289499f5ac9850c30e85,
     type: 3}
+--- !u!114 &305780671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8224831459321457498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dce757aff71c2940909f1d8e810c859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseOverKill: 100
+--- !u!114 &305780672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8224831459321457498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a369ca1b5dd7b064e93f9ca79daaf885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  zeroHealthEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 305780671}
+        m_MethodName: ToLevel3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  currentHealth: 0

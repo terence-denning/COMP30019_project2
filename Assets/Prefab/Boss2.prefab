@@ -14,13 +14,15 @@ GameObject:
   - component: {fileID: 3725571306823219600}
   - component: {fileID: 3725571306823219615}
   - component: {fileID: 3725571306823219604}
+  - component: {fileID: 475262293}
+  - component: {fileID: 475262294}
   m_Layer: 0
   m_Name: Boss2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3725571306823219603
 Transform:
   m_ObjectHideFlags: 0
@@ -108,7 +110,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &3725571306823219604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,4 +123,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f61ad681475204c4583b03465f9dd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 3725571306823219615}
+--- !u!114 &475262293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3725571306823219614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dce757aff71c2940909f1d8e810c859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseOverKill: 0
+--- !u!114 &475262294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3725571306823219614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a369ca1b5dd7b064e93f9ca79daaf885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  zeroHealthEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 475262293}
+        m_MethodName: ToLevel2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  currentHealth: 0

@@ -36,7 +36,7 @@ public class ProgressBarCircle : MonoBehaviour {
 
         set
         {
-            value = Mathf.Clamp(value, 0, 100);
+            //value = Mathf.Clamp(value, 0, 100);
             barValue = value;
             UpdateValue(barValue);
 
@@ -75,7 +75,7 @@ public class ProgressBarCircle : MonoBehaviour {
        
         bar.fillAmount = -(val / 100) + 1f;
 
-        txtTitle.text = Title + " " + val + "%";
+        txtTitle.text = Title + " " + val ;
 
         if (Alert >= val)
         {

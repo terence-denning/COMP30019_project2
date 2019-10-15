@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -35,7 +36,11 @@ public class PlayerControl : MonoBehaviour
         
         OverKillBar = 0;
     }
-
+    //GameOver
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameEnded");
+    }
     public void IncreaseOverKill(float amount)
     {
         if (OverKill == false)
@@ -45,7 +50,7 @@ public class PlayerControl : MonoBehaviour
     }
 
     void OnCollisionStay(Collision other)
-    {
+    {    
         if (other.gameObject.tag == "Enemy")
         {
             Vector3 dir = (this.transform.position - other.transform.position).normalized;

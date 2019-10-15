@@ -38,9 +38,12 @@ public class melee : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
+            Vector3 dir = -(player.transform.position - other.transform.position).normalized;
+           other. GetComponent<Rigidbody>().AddForce(dir * 200);
             HealthManager hm = other.GetComponent<HealthManager>();
             hm.ApplyDamage(CurrentDamge);
-            Debug.Log("hit damage = " + CurrentDamge);
         }
     }
+
+
 }

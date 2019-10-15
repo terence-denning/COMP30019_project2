@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 5441244840537373105}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 5441244840553395038}
   m_Layer: 0
   m_Name: flor_to_wall_angle_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 5441244840554681228}
   m_Layer: 0
   m_Name: wall_base_roof (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 5441244840641924680}
   m_Layer: 0
   m_Name: wall_base_roof (17)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 5441244840675812624}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 5441244840676550359}
   m_Layer: 0
   m_Name: flor_clean (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 5441244840679603452}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 5441244840682332766}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -736,7 +736,7 @@ GameObject:
   - component: {fileID: 5441244840687526721}
   m_Layer: 0
   m_Name: flor_clean (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 5441244840751243169}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 5441244840784448280}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1010,7 +1010,7 @@ GameObject:
   - component: {fileID: 5441244840790030946}
   m_Layer: 0
   m_Name: wall_base_roof (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1058,7 +1058,7 @@ GameObject:
   - component: {fileID: 5441244840828019234}
   m_Layer: 0
   m_Name: wall_base_roof (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1108,7 +1108,7 @@ GameObject:
   - component: {fileID: 5441244840880803540}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1198,7 +1198,7 @@ GameObject:
   - component: {fileID: 5441244840886566550}
   m_Layer: 0
   m_Name: wall_base_roof (15)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1246,7 +1246,7 @@ GameObject:
   - component: {fileID: 5441244840907270323}
   m_Layer: 0
   m_Name: wall_base_roof (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1294,7 +1294,7 @@ GameObject:
   - component: {fileID: 5441244840914622336}
   m_Layer: 0
   m_Name: wall_angle_roof (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1344,7 +1344,7 @@ GameObject:
   - component: {fileID: 5441244840935102475}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1434,7 +1434,7 @@ GameObject:
   - component: {fileID: 5441244840958064995}
   m_Layer: 0
   m_Name: wall_base_roof (12)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 5441244841011704792}
   m_Layer: 0
   m_Name: flor_base (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1531,7 +1531,7 @@ GameObject:
   - component: {fileID: 5441244841012174416}
   m_Layer: 0
   m_Name: wall_door_roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1581,7 +1581,7 @@ GameObject:
   - component: {fileID: 5441244841029237019}
   m_Layer: 0
   m_Name: wall_angle
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1673,7 +1673,7 @@ GameObject:
   - component: {fileID: 5441244841038596302}
   m_Layer: 0
   m_Name: flor_clean (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1765,7 +1765,7 @@ GameObject:
   - component: {fileID: 5441244841040618093}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1857,7 +1857,7 @@ GameObject:
   - component: {fileID: 5441244841069153107}
   m_Layer: 0
   m_Name: wall_angle
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1949,7 +1949,7 @@ GameObject:
   - component: {fileID: 5441244841110468714}
   m_Layer: 0
   m_Name: flor_to_wall_door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2041,7 +2041,7 @@ GameObject:
   - component: {fileID: 5441244841125441321}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2131,7 +2131,7 @@ GameObject:
   - component: {fileID: 5441244841129899881}
   m_Layer: 0
   m_Name: flor_base (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2182,7 +2182,7 @@ GameObject:
   - component: {fileID: 5441244841149374669}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2272,7 +2272,7 @@ GameObject:
   - component: {fileID: 5441244841185779256}
   m_Layer: 0
   m_Name: flor_base (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2321,7 +2321,7 @@ GameObject:
   - component: {fileID: 5441244841187034957}
   m_Layer: 0
   m_Name: wall_base_roof (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2371,7 +2371,7 @@ GameObject:
   - component: {fileID: 5441244841201972664}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2463,7 +2463,7 @@ GameObject:
   - component: {fileID: 5441244841206568041}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2555,7 +2555,7 @@ GameObject:
   - component: {fileID: 5441244841210147815}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2647,7 +2647,7 @@ GameObject:
   - component: {fileID: 5441244841231958858}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2737,7 +2737,7 @@ GameObject:
   - component: {fileID: 5441244841252825254}
   m_Layer: 0
   m_Name: wall_base_roof (16)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2787,7 +2787,7 @@ GameObject:
   - component: {fileID: 5441244841269952471}
   m_Layer: 0
   m_Name: wall_angle
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2877,7 +2877,7 @@ GameObject:
   - component: {fileID: 5441244841275025825}
   m_Layer: 0
   m_Name: wall_base_roof (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2927,7 +2927,7 @@ GameObject:
   - component: {fileID: 5441244841355320148}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3017,7 +3017,7 @@ GameObject:
   - component: {fileID: 5441244841372973168}
   m_Layer: 0
   m_Name: wall_base_roof (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3067,7 +3067,7 @@ GameObject:
   - component: {fileID: 5441244841373839049}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3159,7 +3159,7 @@ GameObject:
   - component: {fileID: 5441244841394396384}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3249,7 +3249,7 @@ GameObject:
   - component: {fileID: 5441244841397130231}
   m_Layer: 0
   m_Name: wall_base_roof (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3299,7 +3299,7 @@ GameObject:
   - component: {fileID: 5441244841447175131}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3391,7 +3391,7 @@ GameObject:
   - component: {fileID: 5441244841480198830}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3483,7 +3483,7 @@ GameObject:
   - component: {fileID: 5441244841481850511}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3575,7 +3575,7 @@ GameObject:
   - component: {fileID: 5441244841495721460}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3665,7 +3665,7 @@ GameObject:
   - component: {fileID: 5441244841522466470}
   m_Layer: 0
   m_Name: flor_base (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3716,7 +3716,7 @@ GameObject:
   - component: {fileID: 5441244841555965046}
   m_Layer: 0
   m_Name: flor_to_wall_angle_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3808,7 +3808,7 @@ GameObject:
   - component: {fileID: 5441244841574528918}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3898,7 +3898,7 @@ GameObject:
   - component: {fileID: 5441244841620342642}
   m_Layer: 0
   m_Name: wall_base_roof (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3948,7 +3948,7 @@ GameObject:
   - component: {fileID: 5441244841625608049}
   m_Layer: 0
   m_Name: flor_clean
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4040,7 +4040,7 @@ GameObject:
   - component: {fileID: 5441244841686435875}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4130,7 +4130,7 @@ GameObject:
   - component: {fileID: 5441244841689648190}
   m_Layer: 0
   m_Name: wall_base_roof (18)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4178,7 +4178,7 @@ GameObject:
   - component: {fileID: 5441244841689787609}
   m_Layer: 0
   m_Name: wall_angle_roof (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4228,7 +4228,7 @@ GameObject:
   - component: {fileID: 5441244841711008887}
   m_Layer: 0
   m_Name: flor_clean (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4320,7 +4320,7 @@ GameObject:
   - component: {fileID: 5441244841788967922}
   m_Layer: 0
   m_Name: flor_clean (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4412,7 +4412,7 @@ GameObject:
   - component: {fileID: 5441244841811609321}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4504,7 +4504,7 @@ GameObject:
   - component: {fileID: 5441244841857324814}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4596,7 +4596,7 @@ GameObject:
   - component: {fileID: 5441244841861770904}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4686,7 +4686,7 @@ GameObject:
   - component: {fileID: 5441244841885047752}
   m_Layer: 0
   m_Name: wall_angle_roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4736,7 +4736,7 @@ GameObject:
   - component: {fileID: 5441244841906097373}
   m_Layer: 0
   m_Name: flor_clean
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4828,7 +4828,7 @@ GameObject:
   - component: {fileID: 5441244841920346539}
   m_Layer: 0
   m_Name: wall_door
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4920,7 +4920,7 @@ GameObject:
   - component: {fileID: 5441244841930450027}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5012,7 +5012,7 @@ GameObject:
   - component: {fileID: 5441244841980113527}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5104,7 +5104,7 @@ GameObject:
   - component: {fileID: 5441244841995953214}
   m_Layer: 0
   m_Name: flor_to_wall_angle_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5196,7 +5196,7 @@ GameObject:
   - component: {fileID: 5441244842018238712}
   m_Layer: 0
   m_Name: flor_to_wall_angle_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5288,7 +5288,7 @@ GameObject:
   - component: {fileID: 5441244842034263027}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5380,7 +5380,7 @@ GameObject:
   - component: {fileID: 5441244842035789175}
   m_Layer: 0
   m_Name: flor_clean (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5472,7 +5472,7 @@ GameObject:
   - component: {fileID: 5441244842056481230}
   m_Layer: 0
   m_Name: flor_to_wall_angle_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5564,7 +5564,7 @@ GameObject:
   - component: {fileID: 5441244842068157129}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5652,9 +5652,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5441244842097694716}
   - component: {fileID: 5441244842097694719}
+  - component: {fileID: 8669963242280361669}
+  - component: {fileID: 4307212763946301017}
   m_Layer: 0
   m_Name: R
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5713,6 +5715,47 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &8669963242280361669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5441244842097694718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &4307212763946301017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5441244842097694718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668ab2f32262bb74aaee31cacdbd7878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5441244842106333865
 GameObject:
   m_ObjectHideFlags: 0
@@ -5727,7 +5770,7 @@ GameObject:
   - component: {fileID: 5441244842106333863}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5817,7 +5860,7 @@ GameObject:
   - component: {fileID: 5441244842118152026}
   m_Layer: 0
   m_Name: wall_base_roof (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5867,7 +5910,7 @@ GameObject:
   - component: {fileID: 5441244842158182816}
   m_Layer: 0
   m_Name: flor_clean
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5959,7 +6002,7 @@ GameObject:
   - component: {fileID: 5441244842162425460}
   m_Layer: 0
   m_Name: flor_to_wall_angle_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6051,7 +6094,7 @@ GameObject:
   - component: {fileID: 5441244842172109218}
   m_Layer: 0
   m_Name: flor_to_wall_angle_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6143,7 +6186,7 @@ GameObject:
   - component: {fileID: 5441244842187726979}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6235,7 +6278,7 @@ GameObject:
   - component: {fileID: 5441244842199081692}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6327,7 +6370,7 @@ GameObject:
   - component: {fileID: 5441244842221984049}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6419,7 +6462,7 @@ GameObject:
   - component: {fileID: 5441244842243264691}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6511,7 +6554,7 @@ GameObject:
   - component: {fileID: 5441244842254938662}
   m_Layer: 0
   m_Name: flor_clean (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6603,7 +6646,7 @@ GameObject:
   - component: {fileID: 5441244842274852560}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6695,7 +6738,7 @@ GameObject:
   - component: {fileID: 5441244842309639481}
   m_Layer: 0
   m_Name: wall_angle
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6787,7 +6830,7 @@ GameObject:
   - component: {fileID: 5441244842314028081}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6877,7 +6920,7 @@ GameObject:
   - component: {fileID: 5441244842337936344}
   m_Layer: 0
   m_Name: wall_angle_roof (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6927,7 +6970,7 @@ GameObject:
   - component: {fileID: 5441244842341783696}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7019,7 +7062,7 @@ GameObject:
   - component: {fileID: 5441244842423290684}
   m_Layer: 0
   m_Name: flor_to_wall_angle_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7111,7 +7154,7 @@ GameObject:
   - component: {fileID: 5441244842428123881}
   m_Layer: 0
   m_Name: flor_clean (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7203,7 +7246,7 @@ GameObject:
   - component: {fileID: 5441244842475147597}
   m_Layer: 0
   m_Name: flor_clean
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7295,7 +7338,7 @@ GameObject:
   - component: {fileID: 5441244842477261246}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7387,7 +7430,7 @@ GameObject:
   - component: {fileID: 5441244842499783844}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7479,7 +7522,7 @@ GameObject:
   - component: {fileID: 5441244842519612160}
   m_Layer: 0
   m_Name: flor_clean (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7571,7 +7614,7 @@ GameObject:
   - component: {fileID: 5441244842525703160}
   m_Layer: 0
   m_Name: flor_clean (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7663,7 +7706,7 @@ GameObject:
   - component: {fileID: 5441244842535351132}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7755,7 +7798,7 @@ GameObject:
   - component: {fileID: 5441244842540097325}
   m_Layer: 0
   m_Name: flor_to_wall_up
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7847,7 +7890,7 @@ GameObject:
   - component: {fileID: 5441244842576282435}
   m_Layer: 0
   m_Name: flor_clean (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7939,7 +7982,7 @@ GameObject:
   - component: {fileID: 5441244842628373047}
   m_Layer: 0
   m_Name: flor_to_wall_down
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8031,7 +8074,7 @@ GameObject:
   - component: {fileID: 5441244842632497042}
   m_Layer: 0
   m_Name: flor_clean (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8123,7 +8166,7 @@ GameObject:
   - component: {fileID: 5441244842672321008}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8215,7 +8258,7 @@ GameObject:
   - component: {fileID: 5441244842674060497}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8368,3 +8411,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openningDirection: 3
+  waittime: 4

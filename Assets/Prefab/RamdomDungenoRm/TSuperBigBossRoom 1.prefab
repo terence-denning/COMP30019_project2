@@ -19454,7 +19454,7 @@ GameObject:
   - component: {fileID: 19141949664225405}
   m_Layer: 0
   m_Name: TSuperBigBossRoom 1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20348,6 +20348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openningDirection: 0
+  waittime: 4
 --- !u!1 &1994924452640867103
 GameObject:
   m_ObjectHideFlags: 0
@@ -20515,6 +20516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openningDirection: 1
+  waittime: 4
 --- !u!1 &2008234800028526477
 GameObject:
   m_ObjectHideFlags: 0
@@ -20590,6 +20592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openningDirection: 0
+  waittime: 4
 --- !u!1 &6912013566874649184
 GameObject:
   m_ObjectHideFlags: 0
@@ -20665,6 +20668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openningDirection: 0
+  waittime: 4
 --- !u!1 &8650465294076655193
 GameObject:
   m_ObjectHideFlags: 0
@@ -20740,3 +20744,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openningDirection: 0
+  waittime: 4

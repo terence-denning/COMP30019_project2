@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 5668904585666621624}
   - component: {fileID: 5668904585666621616}
   - component: {fileID: 4028697659868349461}
+  - component: {fileID: 6286178337785601088}
   m_Layer: 0
   m_Name: ExploEnemy
   m_TagString: Enemy
@@ -220,7 +221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5668904585666621627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.487, y: 0.146, z: 93.348}
+  m_LocalPosition: {x: -0.487, y: 0.131, z: 93.348}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 5668904583607321247}
@@ -298,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 113d7566978eda641ae00549eb34f260, type: 3}
-  maintex: {fileID: 2800000, guid: c8c93c24a3f89d94c88b1fe547ac9e11, type: 3}
+  maintex: {fileID: 2800000, guid: 61080f8eada652a459f5b754af6f7aa5, type: 3}
   pointLight: {fileID: 0}
 --- !u!114 &8949774030367151814
 MonoBehaviour:
@@ -314,9 +315,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Explosion: {fileID: 8212246571355142202, guid: 0d7cc123cea372b40835010962538add,
     type: 3}
-  wonder: 1
-  radius: 5
+  wonder: 1.63
+  radius: 3.02
   IsExplode: 1
+  Isknocl: 0
 --- !u!114 &5668904585666621625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +346,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5668904585666621623}
+        m_MethodName: DestroyMe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   currentHealth: 0
@@ -361,7 +374,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 112
   m_CollisionDetection: 2
 --- !u!114 &5668904585666621616
 MonoBehaviour:
@@ -392,6 +405,28 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &6286178337785601088
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5668904585666621627}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 0.41
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &5669331458526382106
 GameObject:
   m_ObjectHideFlags: 0

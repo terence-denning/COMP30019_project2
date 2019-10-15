@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 4554079584305876265}
   m_Layer: 0
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -409,7 +409,7 @@ Transform:
   m_GameObject: {fileID: 4554079584305876269}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1, y: 0.5, z: 0}
-  m_LocalScale: {x: 0.3, y: 2, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 2.5, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4554079584745045274}
   m_RootOrder: 1
@@ -735,7 +735,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 112
   m_CollisionDetection: 2
 --- !u!114 &4554079584745045255
 MonoBehaviour:
@@ -764,7 +764,18 @@ MonoBehaviour:
   startingHealth: 100
   zeroHealthEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4554079584745045273}
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   currentHealth: 0

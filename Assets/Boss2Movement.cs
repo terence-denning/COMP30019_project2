@@ -7,8 +7,8 @@ public class Boss2Movement : MonoBehaviour
 {
 
     public Rigidbody rb;
-
     private int time = 0;
+    private int teleportinterval = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -19,20 +19,24 @@ public class Boss2Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         // chase player
         GameObject player = GameObject.Find("Player");
-
+        Vector3 dir = (player.transform.position - transform.position).normalized;
         if (isClose(player.transform.position, this.transform.position))
         {
             chasePlayer(player.transform.position);
+            if (teleportinterval > 300)
+            {
+                Vector3 dpos = transform.position + dir;
+                dpos.y = transform.position.y;
+                Debug.Log("TelepotR!");
+                transform.position = dpos ;
+                teleportinterval = 0;
+            } teleportinterval++;
         }
-
-        if( time > 400)
-        {
-            rb.AddForce(0, 700.0f, 0);
-            time = 0;
-        }
-        time++;
+        
+        
     }
 
     bool isClose(Vector3 obj1, Vector3 obj2)
@@ -50,19 +54,19 @@ public class Boss2Movement : MonoBehaviour
         float zMov;
         if (playerPos.x > this.transform.position.x)
         {
-            xMov = 5.0f;
+            xMov = 2.0f;
         }
         else
         {
-            xMov = -5.0f;
+            xMov = -2.0f;
         }
         if (playerPos.z > this.transform.position.z)
         {
-            zMov = 5.0f;
+            zMov = 2.0f;
         }
         else
         {
-            zMov = -5.0f;
+            zMov = -2.0f;
         }
         rb.AddForce(xMov, 0, zMov);
     }

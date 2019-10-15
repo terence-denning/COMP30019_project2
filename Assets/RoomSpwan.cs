@@ -13,8 +13,10 @@ public class RoomSpwan : MonoBehaviour
     //4 right
     private RoomTemp template;
     private int ran;
+
     private bool spawned = false;
     public float waittime = 4f;
+
     
 
     void Start()
@@ -37,8 +39,12 @@ public class RoomSpwan : MonoBehaviour
             spawned = true;
 
         }*/
-       Destroy(gameObject);
+
+           Destroy(this.gameObject);
+
     }
+
+
     void Spwan()
     {
         if(spawned == false)
@@ -47,24 +53,27 @@ public class RoomSpwan : MonoBehaviour
             {
                 ran = Random.Range(0, template.bottomRm.Length);
                 Instantiate(template.bottomRm[ran], transform.position, template.bottomRm[ran].transform.rotation);
+               
             }
             else if (openningDirection == 2)
             {
                 ran = Random.Range(0, template.topRm.Length);
                 Instantiate(template.topRm[ran], transform.position, template.topRm[ran].transform.rotation);
+                
 
             }
             else if (openningDirection == 3)
             {
                 ran = Random.Range(0, template.leftRm.Length);
                 Instantiate(template.leftRm[ran], transform.position, template.leftRm[ran].transform.rotation);
+              
             }
             else if (openningDirection == 4)
             {
                 ran = Random.Range(0, template.rightRm.Length);
                 Instantiate(template.rightRm[ran], transform.position, template.rightRm[ran].transform.rotation);
+               
             }
-
             spawned = true;
         }
     }

@@ -15,45 +15,50 @@ public class SimpleEnemyMovement : MonoBehaviour
     public bool IsExplode;
     private GameObject player;
     private bool reset;
-    private void OnEnable()
+    public bool Isknocl;
+    private float knocktimer;
+
+        private void OnEnable()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        //navg = GetComponent<NavMeshAgent>();
+        navg = GetComponent<NavMeshAgent>();
         timer = wonder;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //GameObject player = GameObject.FindGameObjectWithTag("Player");
-        //wodner around
         timer += Time.deltaTime;
-     
-
         //Player in close range
         if (isClose(player.transform.position, this.transform.position))
         {
-            //navg.SetDestination(player.transform.position);
-            /*if (reset)
-            {
-                navg.SetDestination(this.transform.position);
-                reset = false;
-            }*/
-
-            chasePlayer(player.transform.position);
-            if (IsExplode)
-            {
-                explode(player.transform.position, this.transform.position);
-            }
+            navg.SetDestination(player.transform.position);
         }
-       /* if (timer >= wonder && isClose(player.transform.position, this.transform.position) == false)
+
+        
+        if (timer >= wonder && isClose(player.transform.position, this.transform.position) == false)
         {
             Vector3 newPos = RandomNavSphere(transform.position, radius, -1);
             navg.SetDestination(newPos);
             timer = 0;
             reset = true;
-        }*/
+        }
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Player" && IsExplode)
+        {
+            GameObject exp = Instantiate(this.Explosion);
+            exp.transform.position = this.transform.position;
+            player.GetComponent<HealthManager>().ApplyDamage(30);
+            Vector3 dir = -(transform.position - player.transform.position).normalized;
+            player.GetComponent<Rigidbody>().AddForce(dir * 2000);
+            Destroy(this.gameObject);
+            Destroy(exp, 0.5f);
+        }
+    }
+
 
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask) {
         Vector3 randDirection =  UnityEngine.Random.insideUnitSphere * dist;
@@ -75,39 +80,6 @@ public class SimpleEnemyMovement : MonoBehaviour
         }
         return false;
     }
-
-    void chasePlayer(Vector3 playerPos)
-    {
-        float xMov;
-        float zMov;
-        if(playerPos.x > this.transform.position.x)
-        {
-            xMov = 0.01f;
-        } else
-        {
-            xMov = -0.01f;
-        }
-        if (playerPos.z > this.transform.position.z)
-        {
-            zMov = 0.01f;
-        }
-        else
-        {
-            zMov = -0.01f;
-        }
-        this.transform.position += new Vector3(xMov, 0, zMov);
-    }
-
-    void explode(Vector3 obj1, Vector3 obj2)
-    {
-        if ((Math.Abs(obj1.x - obj2.x) < 0.5f) && (Math.Abs(obj1.z - obj2.z) < 0.5f))
-        {
-            // Create explosion effect
-            GameObject exp = Instantiate(this.Explosion);
-            exp.transform.position = this.transform.position;
-            
-            Destroy(this.gameObject);
-            Destroy(exp, 0.5f);
-        }
-    }
+    
+    
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class EnemyControl : MonoBehaviour
 {
@@ -27,9 +28,22 @@ public class EnemyControl : MonoBehaviour
     
     public void DestroyMe()
     {
-        Destroy(this);
+        Destroy(this.gameObject);
     }
+    
 
+    public void win()
+    {
+        SceneManager.LoadScene("GameWin");
+    }
+    public void ToLevel3()
+    {
+        SceneManager.LoadScene("ThirdLevel");
+    }
+    public void ToLevel2()
+    {
+        SceneManager.LoadScene("SecondLevel");
+    }
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Player")
@@ -37,6 +51,7 @@ public class EnemyControl : MonoBehaviour
             other.gameObject.GetComponent<HealthManager>().ApplyDamage(10);
         }
     }
+    
 
     // Update is called once per frame
     void Update()
