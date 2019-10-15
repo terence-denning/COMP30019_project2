@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using UnityEditor;
 
 public class ClickController : MonoBehaviour
 {
@@ -33,5 +35,11 @@ public class ClickController : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale =0.0f;
         GameIsPause = true;
+    }
+
+    public void Quit()
+    {
+        //Application.Quit();
+        EditorApplication.Exit(0);
     }
 }

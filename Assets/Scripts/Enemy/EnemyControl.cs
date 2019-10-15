@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -13,8 +14,9 @@ public class EnemyControl : MonoBehaviour
     private GameObject player;
     public float increaseOverKill;
     private PlayerControl control;
+    
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         rb = GetComponent<Rigidbody>();
         HM = GetComponent<HealthManager>();
@@ -26,6 +28,14 @@ public class EnemyControl : MonoBehaviour
     public void DestroyMe()
     {
         Destroy(this);
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<HealthManager>().ApplyDamage(10);
+        }
     }
 
     // Update is called once per frame

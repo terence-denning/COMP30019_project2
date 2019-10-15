@@ -19,9 +19,10 @@ public class PlayerControl : MonoBehaviour
     private bool ModifyStatus = true;
     private bool OverKill;
     private float lerpindex;
-    private float OverKillBar;
+    public float OverKillBar;
     public UnityEvent ESCBotton;
     public float Overkillbarreducespeed;
+    public float knockbackforce;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -31,6 +32,7 @@ public class PlayerControl : MonoBehaviour
         Melee = GetComponentInChildren<melee>();
         gun = GetComponentInChildren<Gun>();
         PL = GetComponentInChildren<PointLight>();
+        
         OverKillBar = 0;
     }
 
@@ -42,9 +44,19 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            Vector3 dir = (this.transform.position - other.transform.position).normalized;
+            rb.AddForce(dir * knockbackforce);  
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        
         //PlayerStatusUpdate
         if (ModifyStatus)
         {

@@ -32,7 +32,6 @@ public class HealthManager : MonoBehaviour {
         if (currentHealth <= 0)
         {
            this.zeroHealthEvent.Invoke();
-           Destroy(this.gameObject);
         }
     }
 

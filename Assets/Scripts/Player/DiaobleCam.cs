@@ -7,6 +7,7 @@ public class DiaobleCam : MonoBehaviour
     public GameObject player;
     public float damp = 1;
     private Vector3 offset;
+    private Vector3 velocity = Vector3.zero;
     private Quaternion rotation;
     // Start is called before the first frame update
     void Start()
@@ -19,8 +20,9 @@ public class DiaobleCam : MonoBehaviour
     void Update()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        Vector3 dpos;
+        Vector3 pos,dpos;
+        
         dpos = player.transform.position + offset;
-        transform.position = dpos;
+        transform.position = Vector3.SmoothDamp(transform.position, dpos, ref velocity ,  0.3f);
     }
 }

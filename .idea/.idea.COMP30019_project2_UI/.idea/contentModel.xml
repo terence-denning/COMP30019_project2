@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\miker\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\miker\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_COMP30019_project2_UI.310496307.00" t="ExcludeRecursive" />
+    <e p="C:\Users\miker\Desktop\COMP30019_project2_UI" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Abilities_Skills_System" t="Include">
+          <e p="Bar.cs" t="Include" />
+          <e p="Inventory" t="Include">
+            <e p="Holder.cs" t="Include" />
+            <e p="Inventory.cs" t="Include" />
+            <e p="Inventory_Slot.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Ability.cs" t="Include" />
+          </e>
+        </e>
+        <e p="AddRoom.cs" t="Include" />
+        <e p="Boss2Movement.cs" t="Include" />
+        <e p="Boss3Movement.cs" t="Include" />
+        <e p="BossMovement.cs" t="Include" />
+        <e p="EnemyDrop.cs" t="Include" />
+        <e p="EnemyShoot.cs" t="Include" />
+        <e p="Gun.cs" t="Include" />
+        <e p="Interactable.cs" t="Include" />
+        <e p="InteractItem.cs" t="Include" />
+        <e p="LightShader.shader" t="Include" />
+        <e p="NPC.cs" t="Include" />
+        <e p="Object" t="Include">
+          <e p="Object.cs" t="Include" />
+          <e p="ObjectShader.shader" t="Include" />
+        </e>
+        <e p="PickItem.cs" t="Include" />
+        <e p="PlayerStat.cs" t="Include" />
+        <e p="ProjectileController.cs" t="Include" />
+        <e p="RedPotion.cs" t="Include" />
+        <e p="RoomDestroyer.cs" t="Include" />
+        <e p="RoomSpwan.cs" t="Include" />
+        <e p="RoomTemp.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Enemy" t="Include">
+            <e p="EnemyControl.cs" t="Include" />
+            <e p="EnemyManager.cs" t="Include" />
+          </e>
+          <e p="HealthManager.cs" t="Include" />
+          <e p="melee.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="DiaobleCam.cs" t="Include" />
+            <e p="PlayerControl.cs" t="Include" />
+            <e p="PlayerPos.cs" t="Include" />
+            <e p="PointLight.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SimpleEnemyMovement.cs" t="Include" />
+        <e p="SpawnEnemy.cs" t="Include" />
+        <e p="SpeedPotion.cs" t="Include" />
+        <e p="Stat.cs" t="Include" />
+        <e p="StateBonus.cs" t="Include" />
+        <e p="UI" t="Include">
+          <e p="UI" t="Include">
+            <e p="ShieldBarCircle" t="Include">
+              <e p="ProgressBarCircle.cs" t="Include" />
+            </e>
+            <e p="UI_CScript" t="Include">
+              <e p="BGMgenerator.cs" t="Include" />
+              <e p="BillBoard.cs" t="Include" />
+              <e p="ClickController.cs" t="Include" />
+              <e p="DestropBGM.cs" t="Include" />
+              <e p="dunDestroy.cs" t="Include" />
+              <e p="EnemyHealthBar.cs" t="Include" />
+              <e p="EnergyBar.cs" t="Include" />
+              <e p="GlobalOptions.cs" t="Include" />
+              <e p="GUI_Demo.cs" t="Include" />
+              <e p="MainMenuControllor.cs" t="Include" />
+              <e p="OptionsControllor.cs" t="Include" />
+              <e p="PauseMenuController.cs" t="Include" />
+              <e p="PlayerHealth.cs" t="Include" />
+              <e p="ProgressBar.cs" t="Include" />
+              <e p="SpeedAmount.cs" t="Include" />
+              <e p="StrengthAmount.cs" t="Include" />
+              <e p="UpdateHealthBar.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="COMP30019_project2_UI.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

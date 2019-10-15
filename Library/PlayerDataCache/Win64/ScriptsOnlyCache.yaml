@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ClickController
+    - Demo
+    - DestropBGM
     - DiaobleCam
     - DontDestroy
     - EnemyControl
@@ -96,41 +98,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9446}
     - Class: 114
-      Script: {instanceID: 9494}
+      Script: {instanceID: 9496}
     - Class: 114
-      Script: {instanceID: 9532}
+      Script: {instanceID: 9534}
     - Class: 114
-      Script: {instanceID: 9572}
+      Script: {instanceID: 9574}
     - Class: 114
-      Script: {instanceID: 9694}
+      Script: {instanceID: 9700}
     - Class: 114
-      Script: {instanceID: 9874}
+      Script: {instanceID: 9716}
     - Class: 114
-      Script: {instanceID: 10016}
+      Script: {instanceID: 9884}
     - Class: 114
-      Script: {instanceID: 10120}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 10196}
+      Script: {instanceID: 10136}
     - Class: 114
-      Script: {instanceID: 10198}
+      Script: {instanceID: 10214}
     - Class: 114
-      Script: {instanceID: 10210}
+      Script: {instanceID: 10216}
     - Class: 114
-      Script: {instanceID: 10518}
+      Script: {instanceID: 10228}
     - Class: 114
-      Script: {instanceID: 10520}
+      Script: {instanceID: 10388}
     - Class: 114
-      Script: {instanceID: 10562}
+      Script: {instanceID: 10402}
     - Class: 114
-      Script: {instanceID: 10604}
+      Script: {instanceID: 10420}
     - Class: 114
-      Script: {instanceID: 10612}
+      Script: {instanceID: 10546}
     - Class: 114
-      Script: {instanceID: 41970}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 41978}
+      Script: {instanceID: 10590}
     - Class: 114
-      Script: {instanceID: 41982}
+      Script: {instanceID: 10632}
+    - Class: 114
+      Script: {instanceID: 10640}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -168,6 +172,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -176,6 +184,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 614}
+    - Class: 114
+      Script: {instanceID: 9228}
     - Class: 114
       Script: {instanceID: 9346}
     - Class: 114
@@ -189,10 +201,14 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9404}
     - Class: 114
-      Script: {instanceID: 41980}
+      Script: {instanceID: 9628}
     - Class: 114
-      Script: {instanceID: 41982}
+      Script: {instanceID: 10410}
+    - Class: 114
+      Script: {instanceID: 10420}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -219,16 +235,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 616}
+      Script: {instanceID: 614}
     - Class: 114
       Script: {instanceID: 9348}
     - Class: 114
@@ -238,9 +250,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9404}
     - Class: 114
-      Script: {instanceID: 41968}
-    - Class: 114
-      Script: {instanceID: 41980}
+      Script: {instanceID: 9628}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -293,35 +303,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9446}
     - Class: 114
-      Script: {instanceID: 9572}
+      Script: {instanceID: 9574}
     - Class: 114
-      Script: {instanceID: 9694}
+      Script: {instanceID: 9700}
     - Class: 114
-      Script: {instanceID: 9874}
+      Script: {instanceID: 9884}
     - Class: 114
-      Script: {instanceID: 9980}
+      Script: {instanceID: 9990}
     - Class: 114
-      Script: {instanceID: 10016}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 10120}
+      Script: {instanceID: 10136}
     - Class: 114
-      Script: {instanceID: 10196}
+      Script: {instanceID: 10214}
     - Class: 114
-      Script: {instanceID: 10198}
+      Script: {instanceID: 10216}
     - Class: 114
-      Script: {instanceID: 10210}
+      Script: {instanceID: 10228}
     - Class: 114
-      Script: {instanceID: 10370}
+      Script: {instanceID: 10392}
     - Class: 114
-      Script: {instanceID: 10382}
+      Script: {instanceID: 10406}
     - Class: 114
-      Script: {instanceID: 10520}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 10562}
+      Script: {instanceID: 10590}
     - Class: 114
-      Script: {instanceID: 10604}
+      Script: {instanceID: 10632}
     - Class: 114
-      Script: {instanceID: 10612}
+      Script: {instanceID: 10640}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -331,6 +341,12 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: a052ecf501d38beb9654a969a2cb7f1d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DestropBGM
   - hash:
       serializedVersion: 2
       Hash: 984dcc0ba3707b7691fbdca8ff508d28
@@ -585,6 +601,12 @@ ScriptsOnlyBuild:
     className: ProjectileController
   - hash:
       serializedVersion: 2
+      Hash: 735147f2ee7307da7bb94c8c762d823e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProgressBarCircle
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -795,6 +817,18 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 056391e362e6876f6ec33af30275d5d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OptionsControllor
+  - hash:
+      serializedVersion: 2
+      Hash: b6b2235c32352befdf659a5b0f0e43a1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GUI_Demo
+  - hash:
+      serializedVersion: 2
       Hash: 00274a21279f5cb831ce20f895049e38
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -811,6 +845,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerControl
+  - hash:
+      serializedVersion: 2
+      Hash: babcddaca0e075af60191ddd2b395059
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProgressBar
   - hash:
       serializedVersion: 2
       Hash: 691e9eceda394367bec277789c2538ad
@@ -861,6 +901,12 @@ ScriptsOnlyBuild:
     className: TMP_Asset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -903,6 +949,12 @@ ScriptsOnlyBuild:
     className: EnemyDrop
   - hash:
       serializedVersion: 2
+      Hash: d4c2f12ec3ccf13e3f012b7599a603e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BGMgenerator
+  - hash:
+      serializedVersion: 2
       Hash: 3f8d7b92a6be3c715e55d5cfa7cc8384
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -913,6 +965,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: c2d5f4bd8844cf531a99379cddb4b83f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Interactable
   - hash:
       serializedVersion: 2
       Hash: e1300922cc039f41ab46a47f4cb05898
@@ -975,6 +1033,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GlobalOptions
+  - hash:
+      serializedVersion: 2
       Hash: c7fb4e2bff11d9eae7da42c4274dc044
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -991,6 +1055,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HealthManager
+  - hash:
+      serializedVersion: 2
+      Hash: c2d5f4bd8844cf531a99379cddb4b83f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PickItem
   - hash:
       serializedVersion: 2
       Hash: ee0cef6caaac8ae485bfa82f000f0f7b
@@ -1011,16 +1081,40 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: a2ee3b38ac6c616b6a3fbe16ddae3cec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Demo
+  - hash:
+      serializedVersion: 2
       Hash: e9cea0ad2ce6dba689e1fdae26dee18b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RoomTemp
   - hash:
       serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClickController
+  - hash:
+      serializedVersion: 2
       Hash: 4c5fe33632ecc873fe9792cc840cc6c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RoomSpwan
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DontDestroy
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuControllor
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1101,80 +1195,14 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: c2d5f4bd8844cf531a99379cddb4b83f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Interactable
-  - hash:
-      serializedVersion: 2
-      Hash: c2d5f4bd8844cf531a99379cddb4b83f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PickItem
-  - hash:
-      serializedVersion: 2
-      Hash: 735147f2ee7307da7bb94c8c762d823e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ProgressBarCircle
-  - hash:
-      serializedVersion: 2
-      Hash: 056391e362e6876f6ec33af30275d5d0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OptionsControllor
-  - hash:
-      serializedVersion: 2
-      Hash: b6b2235c32352befdf659a5b0f0e43a1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GUI_Demo
-  - hash:
-      serializedVersion: 2
-      Hash: babcddaca0e075af60191ddd2b395059
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ProgressBar
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PauseMenu
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GlobalOptions
-  - hash:
-      serializedVersion: 2
-      Hash: 049da38e04b44d779517153fb9e33896
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Demo
-  - hash:
-      serializedVersion: 2
-      Hash: c8c5e65e9fb858572516474d6e2102bc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ClickController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DontDestroy
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainMenuControllor
+    className: EnemyHealthBar
   platform: 19
   scenePathNames:
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/OptionScene.unity
   - Assets/Scenes/SecondLevel.unity
-  playerPath: C:/Users/Mike Yu/Desktop/COMP30019_project2/Temp/Project2.exe
+  playerPath: "C:/Users/\u5168\u5C6F\u7684\u5E0C\u671B/Desktop/COMP30019_project2/Project2.exe"
