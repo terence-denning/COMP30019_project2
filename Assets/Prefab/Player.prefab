@@ -593,6 +593,7 @@ GameObject:
   - component: {fileID: 4554079584745045278}
   - component: {fileID: 4554079584745045255}
   - component: {fileID: 4554079584745045254}
+  - component: {fileID: 183908626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -676,6 +677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   ShowingEnviroment: 2
+  ModifyStatus: 1
   OverKillBar: 0
   ESCBotton:
     m_PersistentCalls:
@@ -749,6 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd841804379d064ab1bfa33fc08ddaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillpoint: 0
 --- !u!114 &4554079584745045254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,3 +782,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   currentHealth: 0
+--- !u!114 &183908626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554079584745045279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e3bb2a66c927346b24c2b7105347ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredexp: 10
+  currentexp: 0
+  level: 1
+  modifiy: 0

@@ -77,6 +77,7 @@
     <Compile Include="Assets\BossMovement.cs" />
     <Compile Include="Assets\EnemyDrop.cs" />
     <Compile Include="Assets\EnemyShoot.cs" />
+    <Compile Include="Assets\ExpSystem.cs" />
     <Compile Include="Assets\Gun.cs" />
     <Compile Include="Assets\Interactable.cs" />
     <Compile Include="Assets\InteractItem.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Assets\UI\UI\UI_CScript\StrengthAmount.cs" />
     <Compile Include="Assets\UI\UI\UI_CScript\UpdateHealthBar.cs" />
     <Compile Include="Assets\WanderAI.cs" />
+    <None Include="Assets\Newlight.shader" />
     <None Include="Assets\Object\ObjectShader.shader" />
     <None Include="Assets\LightShader.shader" />
     <Reference Include="Unity.Timeline.Editor">

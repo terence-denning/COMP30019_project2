@@ -10,14 +10,13 @@ public class PlayerControl : MonoBehaviour
 
     private Rigidbody rb;
     public float speed;
-    public float ShowingEnviroment = 0;
     private Camera playcam;
     private HealthManager HM;
     private PlayerStat PS;
     private melee Melee;
     private Gun gun;
     private PointLight PL;
-    private bool ModifyStatus = true;
+    public bool ModifyStatus = true;
     private bool OverKill;
     private float lerpindex;
     public float OverKillBar;
@@ -33,7 +32,6 @@ public class PlayerControl : MonoBehaviour
         Melee = GetComponentInChildren<melee>();
         gun = GetComponentInChildren<Gun>();
         PL = GetComponentInChildren<PointLight>();
-        
         OverKillBar = 0;
     }
     //GameOver
@@ -78,7 +76,7 @@ public class PlayerControl : MonoBehaviour
         
         Debug.Log("Remain bar " + OverKillBar);
         lerpindex = OverKillBar / 100;
-        PL.color = Color.Lerp(Color.black, Color.red, lerpindex);
+        PL.color = Color.Lerp(Color.white, Color.red, lerpindex);
         PL.LightRange = Mathf.Lerp(3, 5, lerpindex);
         if (OverKill)
         {
@@ -112,56 +110,7 @@ public class PlayerControl : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         //rb.AddForce(movement * speed);
         rb.velocity = movement * speed;
-        /*if( Input.GetKey(KeyCode.Space) )
-        {
-            if( this.transform.position.y < 1)
-            {
-                rb.AddForce(new Vector3(0.0f, 4.0f, 0.0f) * speed);
-            }
-        }*/
         resetOnFall();
-        //EOF Movement
-        //Player reveal
-        Shader.SetGlobalFloat("_Radius", ShowingEnviroment);
-       /* if (Input.GetKeyDown(KeyCode.F))
-        {
-            if (trigger)
-            {
-                trigger = false;
-                Debug.Log("change false");
-            }
-            else
-            {
-                trigger = true;
-                Debug.Log("change true");
-            }
-        }
-        if (trigger)
-        {
-            ShowingEnviroment += RevealSpeed/30;
-            if (ShowingEnviroment >= RevealMaxRange)
-            {
-                ShowingEnviroment = RevealMaxRange;
-            }
-            Shader.SetGlobalFloat("_Radius", ShowingEnviroment);
-        }else{
-            ShowingEnviroment -= RevealSpeed/30;
-            if (ShowingEnviroment <= RevealMinRange)
-            {
-                ShowingEnviroment = RevealMinRange;
-            }
-            Shader.SetGlobalFloat("_Radius",ShowingEnviroment);
-        }*/
-        //Range Fire
-        /*if (Input.GetButton("Fire2"))
-        {
-            Vector3 fireToWorldPos = Camera.main.ScreenToWorldPoint(screenPosWithZDistance);
-
-
-            ProjectileController p = Instantiate<ProjectileController>(template);
-            p.transform.position = this.transform.position + playcam.ScreenToWorldPoint(screenPosWithZDistance).normalized ;
-            p.velocity = (fireToWorldPos - this.transform.position).normalized * 10.0f;
-        }*/
         if (Input.GetKeyDown(KeyCode.Escape))
         { 
             ESCBotton.Invoke();

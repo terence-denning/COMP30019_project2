@@ -88,14 +88,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Stat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnemyShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Lab08_Solution/Assets/Scripts/SceneControllers/GameEndScreensController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ExpSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Lab5_Solution/Assets/PhongShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/melee.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SpawnEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Newlight.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Lab08_Solution/Assets/Scripts/IncrementScoreOnDestroy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LightShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/DiaobleCam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Object/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProjectileController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Object/ObjectShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/UpdateHealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/ClickController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Lab08_Solution/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -119,6 +124,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/PlayerStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/DestropBGM.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Lab5_Solution/Assets/CubeScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/Lab5_Solution/Assets/PointLight.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RoomSpwan.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WanderAI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -137,16 +144,25 @@
         <option value="$PROJECT_DIR$/Assets/UI/DestropBGM.cs" />
         <option value="$PROJECT_DIR$/Assets/Wander.cs" />
         <option value="$PROJECT_DIR$/Assets/WanderAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControl.cs" />
         <option value="$PROJECT_DIR$/Assets/BakeAtRuntime.cs" />
         <option value="$PROJECT_DIR$/Assets/RoomSpwan.cs" />
         <option value="$PROJECT_DIR$/Assets/RoomTemp.cs" />
         <option value="$PROJECT_DIR$/Assets/Boss3Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Boss2Movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
         <option value="$PROJECT_DIR$/Assets/PushBack.cs" />
         <option value="$PROJECT_DIR$/Assets/SimpleEnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/melee.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/ClickController.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerStat.cs" />
+        <option value="$PROJECT_DIR$/Assets/ExpSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Object/Object.cs" />
+        <option value="$PROJECT_DIR$/Assets/Object/vertexShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Object/ObjectShader.shader" />
+        <option value="$USER_HOME$/Desktop/Lab5_Solution/Assets/PhongShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Newlight.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/LightShader.shader" />
       </list>
     </option>
   </component>
@@ -198,6 +214,7 @@
       <updated>1570938043445</updated>
       <workItem from="1570938052634" duration="7138000" />
       <workItem from="1571149415171" duration="12015000" />
+      <workItem from="1571197878689" duration="10159000" />
     </task>
     <servers />
   </component>

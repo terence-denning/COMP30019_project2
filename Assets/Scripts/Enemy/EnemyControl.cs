@@ -15,7 +15,8 @@ public class EnemyControl : MonoBehaviour
     private GameObject player;
     public float increaseOverKill;
     private PlayerControl control;
-    
+
+    private ExpSystem expsys;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -23,7 +24,9 @@ public class EnemyControl : MonoBehaviour
         HM = GetComponent<HealthManager>();
         player = GameObject.FindGameObjectWithTag("Player");
         control = player.GetComponent<PlayerControl>();
+        expsys = player.GetComponent<ExpSystem>();
         HM.zeroHealthEvent.AddListener(delegate { control.IncreaseOverKill(increaseOverKill); });
+        HM.zeroHealthEvent.AddListener(delegate {  expsys.gainexp(3);});
     }
     
     public void DestroyMe()

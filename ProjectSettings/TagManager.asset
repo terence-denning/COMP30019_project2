@@ -11,6 +11,7 @@ TagManager:
   - PointLight
   - music
   - Sword
+  - AbilityButton
   layers:
   - Default
   - TransparentFX

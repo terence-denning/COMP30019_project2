@@ -24,6 +24,7 @@
         <e p="BossMovement.cs" t="Include" />
         <e p="EnemyDrop.cs" t="Include" />
         <e p="EnemyShoot.cs" t="Include" />
+        <e p="ExpSystem.cs" t="Include" />
         <e p="Gun.cs" t="Include" />
         <e p="Interactable.cs" t="Include" />
         <e p="InteractItem.cs" t="Include" />
@@ -47,6 +48,7 @@
             <e p="NavMeshSurface.cs" t="Include" />
           </e>
         </e>
+        <e p="Newlight.shader" t="Include" />
         <e p="NPC.cs" t="Include" />
         <e p="Object" t="Include">
           <e p="Object.cs" t="Include" />
