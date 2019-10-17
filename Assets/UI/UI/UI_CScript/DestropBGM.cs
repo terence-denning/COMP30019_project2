@@ -10,11 +10,14 @@ public class DestropBGM : MonoBehaviour
     private void Awake()
     {
         GameObject bgm = GameObject.FindGameObjectWithTag("music");
-        objs = dunDestroy._ddolObjects;
+        objs = dunDestroy2._ddolObjects;
         if((objs.Find((x)=>x.name == "BackgroundMusic")==null))
         {
-            dunDestroy.DontDestroyOnLoad(this.gameObject);
+            dunDestroy2.DontDestroyOnLoad(this.gameObject);
         }
-
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

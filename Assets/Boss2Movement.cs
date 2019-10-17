@@ -7,19 +7,30 @@ public class Boss2Movement : MonoBehaviour
 {
 
     public Rigidbody rb;
-    private int time = 0;
     private int teleportinterval = 0;
-
+    private Color lerpcolor;
+    private float lerpindex;
+    private MeshRenderer render;
+    private float staringhealth;
+    private Vector3 spwanpos;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        spwanpos = this.transform.position;
+        render = this.gameObject.GetComponent<MeshRenderer>();
+        render.material.SetColor("_Color",Color.white);
+        staringhealth = (float)GetComponent<HealthManager>().startingHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Color reflect health
         
+        lerpindex = (staringhealth-GetComponent<HealthManager>().currentHealth) / staringhealth;
+        lerpcolor = Color.Lerp(Color.white,Color.red,lerpindex);
+        render.material.SetColor("_Color",lerpcolor);
         // chase player
         GameObject player = GameObject.Find("Player");
         Vector3 dir = (player.transform.position - transform.position).normalized;
@@ -35,6 +46,7 @@ public class Boss2Movement : MonoBehaviour
                 teleportinterval = 0;
             } teleportinterval++;
         }
+        resetOnFall();
         
         
     }
@@ -46,6 +58,15 @@ public class Boss2Movement : MonoBehaviour
             return true;
         }
         return false;
+    }
+    private void resetOnFall()
+    {
+        if( this.transform.position.y < -10)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            this.transform.position = spwanpos;
+        }
     }
 
     void chasePlayer(Vector3 playerPos)

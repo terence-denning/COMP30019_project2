@@ -12,6 +12,10 @@ TagManager:
   - music
   - Sword
   - AbilityButton
+  - ClickControl
+  - PauseMenu
+  - addskillstr
+  - addskillspd
   layers:
   - Default
   - TransparentFX

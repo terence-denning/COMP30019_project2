@@ -29,7 +29,7 @@ public class GUI_Demo : MonoBehaviour {
 
 	void Start ()
 	{
-		dundestory = dunDestroy._ddolObjects;
+		dundestory = dunDestroy2._ddolObjects;
 		audioSrc = dundestory.Find((x)=>x.name == "BackgroundMusic").GetComponent<AudioSource>();
 		windowRect.x = (Screen.width - windowRect.width)/2;
 		windowRect.y = (Screen.height - windowRect.height)/2;

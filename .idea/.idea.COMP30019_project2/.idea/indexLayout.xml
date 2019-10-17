@@ -19,7 +19,9 @@
       <Path>Logs</Path>
       <Path>MonoBleedingEdge</Path>
       <Path>Project2_Data</Path>
+      <Path>Temp</Path>
       <Path>obj</Path>
+      <Path>temp4</Path>
     </explicitExcludes>
   </component>
 </project>

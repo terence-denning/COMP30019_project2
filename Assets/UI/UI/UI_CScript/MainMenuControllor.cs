@@ -9,12 +9,15 @@ public class MainMenuControllor : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
         Time.timeScale = 1.0f;
+        dunDestroy.DestroyAll();
+       
 
     }
 
     public void OptionScene()
     {
         SceneManager.LoadScene("OptionScene");
+        
     }
 
     public void MainMenyScene()

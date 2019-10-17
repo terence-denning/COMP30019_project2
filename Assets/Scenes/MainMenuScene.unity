@@ -331,12 +331,20 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1062000081097166404, guid: 6491725299beacb48898d0db5634b0db,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b343c04c7d879594d9361eac9745b8e2, type: 3}
     - target: {fileID: 1062000081097166406, guid: 6491725299beacb48898d0db5634b0db,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 1062000081097166406, guid: 6491725299beacb48898d0db5634b0db, type: 3}
+    - {fileID: 0}
     - {fileID: 1062000081097166407, guid: 6491725299beacb48898d0db5634b0db, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6491725299beacb48898d0db5634b0db, type: 3}
 --- !u!1 &1551735867

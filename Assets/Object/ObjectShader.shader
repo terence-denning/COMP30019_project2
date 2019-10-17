@@ -10,6 +10,7 @@ Shader "Custom/ObjectShader"
 		_Radius("Radius",float) = 0 
 		_PlayerPos("PlayerPos",Vector) = (0.0, 0.0, 0.0)
 		_Worldpos("Worldpos",Vector) = (0.0, 0.0, 0.0)
+		_Color("Color",Color) = (0, 0, 0)
     }
     SubShader
     {
@@ -27,9 +28,9 @@ Shader "Custom/ObjectShader"
             float _LightRange = 0;//Globle variable
             float3 _PlayerPos; //Globle variable
             float3 _Worldpos;
-            float _Radius = 1; 
+            float _Radius ;
             float _CutOff;
-            
+            float3 _Color;
              
             
             struct vertIn
@@ -54,6 +55,7 @@ Shader "Custom/ObjectShader"
 				float4 worldVertex = mul ((float4x4)unity_ObjectToWorld, v.vertex );
 				float3 worldNormal = normalize(mul(transpose((float3x3)unity_WorldToObject), v.normal.xyz));
 				o.vertex = UnityObjectToClipPos(v.vertex);
+				v.color.rgb = _Color.rgb;
 				o.color = v.color;
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				o.worldVertex = worldVertex;
@@ -65,9 +67,9 @@ Shader "Custom/ObjectShader"
 			{
 			    fixed4 albedo = tex2D(_MainTex, v.uv) * v.color;
 			    float distan = distance(_PlayerPos, v.worldVertex);
-                float radius = 2;
+                float radius = 1;
                  clip(radius - distan);              
-                 return albedo;
+                 return albedo ;
 
 			}
             ENDCG

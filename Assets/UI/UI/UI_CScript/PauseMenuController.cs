@@ -8,5 +8,6 @@ public class PauseMenuController : MonoBehaviour
     public void Mainmenu()
     {
         SceneManager.LoadScene("MainMenuScene");
+        dunDestroy.DestroyAll();
     }
 }

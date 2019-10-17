@@ -1,5 +1,5 @@
 ﻿
-Shader "Custom/ObjectShader"
+Shader "Custom/LightShader"
 {
     
      Properties

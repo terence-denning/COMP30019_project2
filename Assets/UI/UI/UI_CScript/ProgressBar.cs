@@ -51,9 +51,7 @@ public class ProgressBar : MonoBehaviour
     private void Awake()
     {
         bar = transform.Find("Bar").GetComponent<Image>();
-        barBackground = GetComponent<Image>();
         txtTitle = transform.Find("Text").GetComponent<Text>();
-        barBackground = transform.Find("BarBackground").GetComponent<Image>();
         audiosource = GetComponent<AudioSource>();
     }
 
@@ -65,8 +63,7 @@ public class ProgressBar : MonoBehaviour
         txtTitle.fontSize = TitleFontSize;
 
         bar.color = BarColor;
-        barBackground.color = BarBackGroundColor; 
-        barBackground.sprite = BarBackGroundSprite;
+
 
         UpdateValue(barValue);
 
@@ -100,16 +97,14 @@ public class ProgressBar : MonoBehaviour
             txtTitle.fontSize = TitleFontSize;
 
             bar.color = BarColor;
-            barBackground.color = BarBackGroundColor;
-
-            barBackground.sprite = BarBackGroundSprite;           
+           
         }
         else
         {
             if (Alert >= barValue && Time.time > nextPlay)
             {
                 nextPlay = Time.time + RepeatRate;
-                //audiosource.PlayOneShot(sound);
+                
             }
         }
     }

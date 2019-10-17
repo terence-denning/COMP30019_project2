@@ -17,17 +17,24 @@ public class SimpleEnemyMovement : MonoBehaviour
     private bool reset;
     public bool Isknocl;
     private float knocktimer;
-
+    public Color oringalcolor ;
+    public Color dieingcolor;
+    private Color lerpcolor;
+    private float lerpindex;
+    private MeshRenderer render;
         private void OnEnable()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         navg = GetComponent<NavMeshAgent>();
         timer = wonder;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+    
+        
         timer += Time.deltaTime;
         //Player in close range
         if (isClose(player.transform.position, this.transform.position))

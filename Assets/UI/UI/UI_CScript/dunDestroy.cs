@@ -18,4 +18,15 @@ public class dunDestroy
 
         _ddolObjects.Clear();
     }
+
+    public static void destroy(GameObject go)
+    {
+        foreach (var Dgo in _ddolObjects)
+        {
+            if (Dgo.CompareTag(go.tag))
+            {
+                UnityEngine.Object.Destroy(Dgo);
+            }
+        }
+    }
 }

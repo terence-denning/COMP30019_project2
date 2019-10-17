@@ -13,12 +13,14 @@ GameObject:
   - component: {fileID: 1257604449991226645}
   - component: {fileID: 1257604449991226644}
   - component: {fileID: 1257604449991226640}
-  - component: {fileID: 1257604449991226641}
   - component: {fileID: 909642778}
   - component: {fileID: 909642785}
+  - component: {fileID: 3764909102430777448}
+  - component: {fileID: 3599468529675419925}
+  - component: {fileID: 6508237099527985722}
   m_Layer: 0
   m_Name: Boss3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,20 +114,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 2
---- !u!114 &1257604449991226641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257604449991226647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d3dfad84bc434d4e838ac2825dca1ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SimpleEnemyTemplate: {fileID: 8737882138573684236, guid: e6b9855994eae1c49a378c4840fd97b8,
-    type: 3}
 --- !u!114 &909642778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,3 +141,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7541496831195106679, guid: c86c7ad2a1df289499f5ac9850c30e85,
     type: 3}
+--- !u!114 &3764909102430777448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257604449991226647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b443a9385bb142f4d9618e72837b7e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paritcletemplate: {fileID: 6616805506229750004, guid: 024d67f1050f58249a7f089187c44dc2,
+    type: 3}
+--- !u!114 &3599468529675419925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257604449991226647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a369ca1b5dd7b064e93f9ca79daaf885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 400
+  zeroHealthEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3764909102430777448}
+        m_MethodName: bossdead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  currentHealth: 0
+--- !u!114 &6508237099527985722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257604449991226647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dce757aff71c2940909f1d8e810c859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseOverKill: 0

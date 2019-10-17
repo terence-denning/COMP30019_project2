@@ -10,17 +10,28 @@ public class BossMovement : MonoBehaviour
 
     private int time = 0;
     private int lastBullet = 70;
-
+    private Vector3 temppos;
+    private Color lerpcolor;
+    private float lerpindex;
+    private MeshRenderer render;
+    private float staringhealth;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        render = this.gameObject.GetComponent<MeshRenderer>();
+        render.material.SetColor("_Color",Color.white);
+        staringhealth = (float)GetComponent<HealthManager>().startingHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Color reflect health
+        
+        lerpindex = (staringhealth-GetComponent<HealthManager>().currentHealth) / staringhealth;
+        lerpcolor = Color.Lerp(Color.white,Color.red,lerpindex);
+        render.material.SetColor("_Color",lerpcolor);
         // spin movement
         this.transform.Rotate(new Vector3(0,time,0));
 
@@ -38,21 +49,21 @@ public class BossMovement : MonoBehaviour
         if (time > lastBullet)
         {
             time = 0;
-
+            temppos = new Vector3(transform.position.x, 0.2f,transform.position.z);
             ProjectileController p1 = Instantiate<ProjectileController>(projectilePrefab);
-            p1.transform.position = this.transform.position;
+            p1.transform.position = temppos;
             p1.velocity = (transform.forward).normalized * 2.0f;
 
             ProjectileController p2 = Instantiate<ProjectileController>(projectilePrefab);
-            p2.transform.position = this.transform.position;
+            p2.transform.position = temppos;
             p2.velocity = (-transform.forward).normalized * 2.0f;
 
             ProjectileController p3 = Instantiate<ProjectileController>(projectilePrefab);
-            p3.transform.position = this.transform.position;
+            p3.transform.position =temppos;
             p3.velocity = (transform.right).normalized * 2.0f;
 
             ProjectileController p4 = Instantiate<ProjectileController>(projectilePrefab);
-            p4.transform.position = this.transform.position;
+            p4.transform.position = temppos;
             p4.velocity = (-transform.right).normalized * 2.0f;
         }
         time++;

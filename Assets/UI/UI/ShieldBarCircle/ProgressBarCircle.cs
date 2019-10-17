@@ -25,7 +25,7 @@ public class ProgressBarCircle : MonoBehaviour {
     public bool repeat = false;
     public float RepearRate = 1f;
 
-    private Image bar, barBackground,Mask;
+    private Image bar, Mask;
     private float nextPlay;
     private AudioSource audiosource;
     private Text txtTitle;
@@ -47,7 +47,7 @@ public class ProgressBarCircle : MonoBehaviour {
     {
 
         txtTitle = transform.Find("Text").GetComponent<Text>();
-        barBackground = transform.Find("BarBackgroundCircle").GetComponent<Image>();
+
         bar = transform.Find("BarCircle").GetComponent<Image>();
         audiosource = GetComponent<AudioSource>();
         Mask= transform.Find("Mask").GetComponent<Image>();
@@ -62,8 +62,7 @@ public class ProgressBarCircle : MonoBehaviour {
 
         bar.color = BarColor;
         Mask.color = MaskColor;
-        barBackground.color = BarBackGroundColor;
-        barBackground.sprite = BarBackGroundSprite;
+
 
         UpdateValue(barValue);
 
@@ -79,11 +78,11 @@ public class ProgressBarCircle : MonoBehaviour {
 
         if (Alert >= val)
         {
-            barBackground.color = BarAlertColor;
+
         }
         else
         {
-            barBackground.color = BarBackGroundColor;
+
         }
 
     }
@@ -101,8 +100,7 @@ public class ProgressBarCircle : MonoBehaviour {
             txtTitle.font = TitleFont;
             Mask.color = MaskColor;
             bar.color = BarColor;
-            barBackground.color = BarBackGroundColor;
-            barBackground.sprite = BarBackGroundSprite;
+
             
         }
         else
@@ -110,7 +108,7 @@ public class ProgressBarCircle : MonoBehaviour {
             if (Alert >= barValue && Time.time > nextPlay)
             {
                 nextPlay = Time.time + RepearRate;
-                audiosource.PlayOneShot(sound);
+
             }
         }
     }

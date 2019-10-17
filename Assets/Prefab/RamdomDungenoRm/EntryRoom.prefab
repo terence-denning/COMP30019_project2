@@ -6083,6 +6083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4444702274240249414}
   - component: {fileID: 4444702274240249409}
+  - component: {fileID: 2781435832635905673}
   m_Layer: 0
   m_Name: EntryRoom
   m_TagString: Wall
@@ -6147,6 +6148,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &2781435832635905673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4444702274240249408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668ab2f32262bb74aaee31cacdbd7878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4444702274240887748
 GameObject:
   m_ObjectHideFlags: 0

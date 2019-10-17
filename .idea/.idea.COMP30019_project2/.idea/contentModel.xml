@@ -6,22 +6,13 @@
     <e p="D:\COMP30019_project2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Abilities_Skills_System" t="Include">
-          <e p="Bar.cs" t="Include" />
-          <e p="Inventory" t="Include">
-            <e p="Holder.cs" t="Include" />
-            <e p="Inventory.cs" t="Include" />
-            <e p="Inventory_Slot.cs" t="Include" />
-            <e p="Item.cs" t="Include" />
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="Ability.cs" t="Include" />
-          </e>
-        </e>
         <e p="AddRoom.cs" t="Include" />
         <e p="Boss2Movement.cs" t="Include" />
         <e p="Boss3Movement.cs" t="Include" />
+        <e p="BossDead.cs" t="Include" />
         <e p="BossMovement.cs" t="Include" />
+        <e p="Destroywhenfinish.cs" t="Include" />
+        <e p="dunDestroy2.cs" t="Include" />
         <e p="EnemyDrop.cs" t="Include" />
         <e p="EnemyShoot.cs" t="Include" />
         <e p="ExpSystem.cs" t="Include" />
@@ -55,6 +46,7 @@
           <e p="ObjectShader.shader" t="Include" />
         </e>
         <e p="PickItem.cs" t="Include" />
+        <e p="PlayerSpwan.cs" t="Include" />
         <e p="PlayerStat.cs" t="Include" />
         <e p="ProjectileController.cs" t="Include" />
         <e p="RedPotion.cs" t="Include" />
@@ -106,6 +98,7 @@
             </e>
           </e>
         </e>
+        <e p="UISkillpoint.cs" t="Include" />
         <e p="WanderAI.cs" t="Include" />
       </e>
       <e p="COMP30019_project2.sln" t="IncludeFlat" />

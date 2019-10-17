@@ -23,10 +23,10 @@ public class PlayerControl : MonoBehaviour
     public UnityEvent ESCBotton;
     public float Overkillbarreducespeed;
     public float knockbackforce;
+    public GameObject pausemenuUI;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        playcam = GameObject.Find("PlayerCamera").GetComponent<Camera>();
         PS = GetComponent<PlayerStat>();
         HM = GetComponent<HealthManager>();
         Melee = GetComponentInChildren<melee>();
@@ -37,6 +37,7 @@ public class PlayerControl : MonoBehaviour
     //GameOver
     public void GameOver()
     {
+        dunDestroy.DestroyAll();
         SceneManager.LoadScene("GameEnded");
     }
     public void IncreaseOverKill(float amount)
@@ -59,7 +60,7 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        playcam = GameObject.Find("PlayerCamera").GetComponent<Camera>();
         //PlayerStatusUpdate
         if (ModifyStatus)
         {
@@ -74,7 +75,6 @@ public class PlayerControl : MonoBehaviour
             OverKillBar = 100;
         }
         
-        Debug.Log("Remain bar " + OverKillBar);
         lerpindex = OverKillBar / 100;
         PL.color = Color.Lerp(Color.white, Color.red, lerpindex);
         PL.LightRange = Mathf.Lerp(3, 5, lerpindex);
@@ -112,8 +112,8 @@ public class PlayerControl : MonoBehaviour
         rb.velocity = movement * speed;
         resetOnFall();
         if (Input.GetKeyDown(KeyCode.Escape))
-        { 
-            ESCBotton.Invoke();
+        {
+           ESCBotton.Invoke();
         }
     }
 
@@ -124,7 +124,7 @@ public class PlayerControl : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
-            this.transform.position = new Vector3(0.0f, 1.0f, 0.0f);
+            this.transform.position = new Vector3(0.0f, 0.2f, 0.0f);
         }
     }
 }

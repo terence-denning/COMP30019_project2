@@ -12,7 +12,7 @@ public class PlayerStat : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         stats.Add(new Stat(100,"HP","Maximum HP"));
-        stats.Add(new Stat(40,"Strength","Your Melee Damage "));
+        stats.Add(new Stat(50,"Strength","Your Melee Damage "));
         stats.Add(new Stat(10,"Agility","Your Range Damage"));
         stats[0].Addstatebounus(new StateBonus(30));
         Debug.Log(stats[0].GetCalculateStat());

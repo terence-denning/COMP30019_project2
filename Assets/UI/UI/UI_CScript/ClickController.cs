@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 using UnityEditor;
 
 public class ClickController : MonoBehaviour
@@ -53,7 +52,6 @@ public class ClickController : MonoBehaviour
 
     public void Quit()
     {
-        //Application.Quit();
-        EditorApplication.Exit(0);
+        Application.Quit();
     }
 }
