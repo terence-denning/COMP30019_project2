@@ -88,6 +88,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ExpSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/melee.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/rotatecamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/ShieldBarCircle/ProgressBarCircle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LightShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
@@ -151,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/DontDestroy.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/GlobalOptions.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/DestropBGM.cs" />
         <option value="$PROJECT_DIR$/Assets/Wander.cs" />
@@ -202,6 +202,7 @@
         <option value="$PROJECT_DIR$/Assets/RedPotion.cs" />
         <option value="$PROJECT_DIR$/Assets/SpeedPotion.cs" />
         <option value="$PROJECT_DIR$/Assets/level.cs" />
+        <option value="$PROJECT_DIR$/Assets/rotatecamera.cs" />
       </list>
     </option>
   </component>
@@ -255,6 +256,7 @@
       <workItem from="1571149415171" duration="12015000" />
       <workItem from="1571197878689" duration="10159000" />
       <workItem from="1571299913475" duration="20452000" />
+      <workItem from="1571324183507" duration="539000" />
     </task>
     <servers />
   </component>

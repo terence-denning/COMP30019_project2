@@ -57,6 +57,7 @@
         <e p="RoomDestroyer.cs" t="Include" />
         <e p="RoomSpwan.cs" t="Include" />
         <e p="RoomTemp.cs" t="Include" />
+        <e p="rotatecamera.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Enemy" t="Include">
             <e p="EnemyControl.cs" t="Include" />
