@@ -21,6 +21,7 @@ public class melee : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             ani.SetTrigger("BaseAttack");
+            GetComponent<AudioSource>().Play();
         }
 
         if (Overkill)

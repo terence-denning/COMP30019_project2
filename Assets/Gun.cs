@@ -15,10 +15,13 @@ public class Gun : MonoBehaviour
     private float timeOfspeedup;
     private bool speedupItem = false;
     public bool overkill;
+    private AudioSource AS;
+    private bool fire;
     void Start()
     {
         ani = GetComponent<Animator>();
         currentshot = intervel;
+        AS = GetComponent<AudioSource>();
         startintervel = intervel;
     }
 
@@ -56,15 +59,12 @@ public class Gun : MonoBehaviour
         //Fire Gun
         if (Input.GetButton("Fire2"))
         {
+            //play audio
+            fire = true;
 
+            //shoting
             if (currentshot > intervel && overkill == false)
             {
-                /*ProjectileController p = Instantiate<ProjectileController>(template);
-                p.transform.position = this.transform.position;
-                p.transform.rotation = transform.localRotation;
-                p.damageAmount = damage;
-                p.GetComponent<Rigidbody>().velocity = (transform.forward).normalized * 7.0f;
-                currentshot = 0;*/
                 Projectile(damage,transform.position,transform.localRotation);
                 currentshot = 0;
             }
@@ -75,23 +75,26 @@ public class Gun : MonoBehaviour
                 Projectile(damage, transform.TransformPoint(new Vector3(1f,0,0)),transform.localRotation);
                 Projectile(damage,transform.TransformPoint(new Vector3(-1f,0,0)),transform.localRotation);
                 currentshot = 0;
+                fire = true;
             }
-            /*{
-                ProjectileController p = Instantiate<ProjectileController>(template);
-                ProjectileController p2 = Instantiate<ProjectileController>(template);
-                ProjectileController p3 = Instantiate<ProjectileController>(template);
-                p.transform.position = this.transform.position;
-                p.transform.rotation = transform.localRotation;
-                p.damageAmount = damage;
-                p.GetComponent<Rigidbody>().velocity = (transform.forward).normalized * 7.0f;
-                currentshot = 0;
-            }*/
+           
         }
+
+        if (fire && !AS.isPlaying)
+        {
+            AS.Play();
+            AS.loop = true;
+        }
+    
+
 
         if (Input.GetButtonUp("Fire2"))
         {
             ani.SetBool("Dawrgun",false);
             currentshot = intervel;
+            fire = false;
+            AS.Stop();
+
         }
     }
 }

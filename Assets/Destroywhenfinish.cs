@@ -16,6 +16,7 @@ public class Destroywhenfinish : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         PS = GetComponent<ParticleSystem>();
         UI = GameObject.FindWithTag("GameController");
+        GetComponent<AudioSource>().Play();
     }
 
     private void Update()
@@ -45,6 +46,7 @@ public class Destroywhenfinish : MonoBehaviour
             }
             if (currentscene == "ThirdLevel")
             {
+                dunDestroy.DestroyAll();
                 SceneManager.LoadScene("GameWin");
             }
             

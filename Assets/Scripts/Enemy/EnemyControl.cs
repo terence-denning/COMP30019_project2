@@ -26,7 +26,7 @@ public class EnemyControl : MonoBehaviour
         control = player.GetComponent<PlayerControl>();
         expsys = player.GetComponent<ExpSystem>();
         HM.zeroHealthEvent.AddListener(delegate { control.IncreaseOverKill(increaseOverKill); });
-        HM.zeroHealthEvent.AddListener(delegate {  expsys.gainexp(3);});
+        HM.zeroHealthEvent.AddListener(delegate {  expsys.gainexp(26);});
     }
 
 

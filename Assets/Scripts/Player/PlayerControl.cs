@@ -54,6 +54,7 @@ public class PlayerControl : MonoBehaviour
         {
             Vector3 dir = (this.transform.position - other.transform.position).normalized;
             rb.AddForce(dir * knockbackforce);  
+            GetComponent<AudioSource>().Play();
         }
     }
 

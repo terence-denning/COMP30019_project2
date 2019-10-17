@@ -23,6 +23,10 @@ public class ProjectileController : MonoBehaviour {
             // Damage object with relevant tag
             HealthManager healthManager = col.GetComponent<HealthManager>();
             healthManager.ApplyDamage(damageAmount);
+            if (tagToDamage == "Player")
+            {
+                col.gameObject.GetComponent<AudioSource>().Play();
+            }
 
             // Destroy self
             Destroy(this.gameObject);

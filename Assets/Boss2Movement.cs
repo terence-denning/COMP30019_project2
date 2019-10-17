@@ -13,6 +13,8 @@ public class Boss2Movement : MonoBehaviour
     private MeshRenderer render;
     private float staringhealth;
     private Vector3 spwanpos;
+
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class Boss2Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         //Color reflect health
         
         lerpindex = (staringhealth-GetComponent<HealthManager>().currentHealth) / staringhealth;

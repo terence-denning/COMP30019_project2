@@ -8,8 +8,8 @@ using Debug = UnityEngine.Debug;
 
 public class ExpSystem : MonoBehaviour
 {
-   public int requiredexp = 10;
-   public int currentexp = 0;
+   public int requiredexp;
+   public int currentexp ;
    public int level = 1;
    public bool modifiy = false;
    private GameObject player;
@@ -22,6 +22,8 @@ public class ExpSystem : MonoBehaviour
    private void Start()
    {
       player = GameObject.FindWithTag("Player");
+      requiredexp = 100;
+      currentexp = 0;
    }
 
    private void Update()

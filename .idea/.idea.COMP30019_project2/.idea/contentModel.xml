@@ -11,14 +11,18 @@
         <e p="Boss3Movement.cs" t="Include" />
         <e p="BossDead.cs" t="Include" />
         <e p="BossMovement.cs" t="Include" />
+        <e p="destroyaudio.cs" t="Include" />
         <e p="Destroywhenfinish.cs" t="Include" />
         <e p="dunDestroy2.cs" t="Include" />
         <e p="EnemyDrop.cs" t="Include" />
         <e p="EnemyShoot.cs" t="Include" />
+        <e p="ExpBar.cs" t="Include" />
+        <e p="expolision.cs" t="Include" />
         <e p="ExpSystem.cs" t="Include" />
         <e p="Gun.cs" t="Include" />
         <e p="Interactable.cs" t="Include" />
         <e p="InteractItem.cs" t="Include" />
+        <e p="level.cs" t="Include" />
         <e p="LightShader.shader" t="Include" />
         <e p="NavMeshComponents" t="Include">
           <e p="Editor" t="Include">

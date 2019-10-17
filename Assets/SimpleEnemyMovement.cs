@@ -22,24 +22,37 @@ public class SimpleEnemyMovement : MonoBehaviour
     private Color lerpcolor;
     private float lerpindex;
     private MeshRenderer render;
+    private bool playaudio;
+    private AudioSource AS;
         private void OnEnable()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         navg = GetComponent<NavMeshAgent>();
         timer = wonder;
+        AS = GetComponent<AudioSource>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-    
-        
+
+        if (playaudio &&! AS.isPlaying)
+        {
+            AS.Play();
+            AS.loop = true;
+        }
         timer += Time.deltaTime;
         //Player in close range
         if (isClose(player.transform.position, this.transform.position))
         {
             navg.SetDestination(player.transform.position);
+            playaudio = true;
+        }
+        else
+        {
+            playaudio = false;
+            AS.Stop();
         }
 
         
