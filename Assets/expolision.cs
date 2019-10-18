@@ -13,6 +13,7 @@ public class expolision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetComponent<AudioSource>().volume = GlobalOptions.volume;
         if (!GetComponent<ParticleSystem>().IsAlive())
         {
             Destroy(this.gameObject);

@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dce757aff71c2940909f1d8e810c859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increaseOverKill: 30
+  increaseOverKill: 51
 --- !u!114 &2617954061681480879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,6 +249,7 @@ MonoBehaviour:
   Isknocl: 0
   oringalcolor: {r: 0, g: 0, b: 0, a: 0}
   dieingcolor: {r: 0, g: 0, b: 0, a: 0}
+  healthbar: {fileID: 5669331458526382106}
 --- !u!114 &2617954061681480864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,7 +370,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6b249c2233dea374097dcf9a04c5fd56, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.54
+  m_Volume: 0.401
   m_Pitch: 1
   Loop: 0
   Mute: 0

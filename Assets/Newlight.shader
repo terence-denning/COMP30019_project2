@@ -7,6 +7,7 @@ Shader "Unlit/Newlight"
 		//_PointLightColor("Point Light Color", Color) = (0, 0, 0)
 		//_PointLightPosition("Point Light Position", Vector) = (0.0, 0.0, 0.0)
 		_Color("Color",Color) = (0, 0, 0)
+		_MainTex ("Texture", 2D) = "white" {}
 	}
 	SubShader
 	{

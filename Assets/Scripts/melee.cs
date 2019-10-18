@@ -18,6 +18,7 @@ public class melee : MonoBehaviour
 
     void Update()
     {
+        GetComponent<AudioSource>().volume = GlobalOptions.volume;
         if (Input.GetButtonDown("Fire1"))
         {
             ani.SetTrigger("BaseAttack");

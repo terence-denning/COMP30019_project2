@@ -7,6 +7,8 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AddRoom.cs" t="Include" />
+        <e p="BGM.cs" t="Include" />
+        <e p="bgmvolume.cs" t="Include" />
         <e p="Boss2Movement.cs" t="Include" />
         <e p="Boss3Movement.cs" t="Include" />
         <e p="BossDead.cs" t="Include" />
@@ -73,6 +75,7 @@
           </e>
         </e>
         <e p="SimpleEnemyMovement.cs" t="Include" />
+        <e p="slidervolume.cs" t="Include" />
         <e p="SpawnEnemy.cs" t="Include" />
         <e p="SpeedPotion.cs" t="Include" />
         <e p="Stat.cs" t="Include" />

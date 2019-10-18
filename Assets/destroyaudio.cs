@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class destroyaudio : MonoBehaviour
 {
+    private void OnEnable()
+    {
+        GetComponent<AudioSource>().volume = GlobalOptions.volume;
+    }
+
     private void Update()
     {
         if (!GetComponent<AudioSource>().isPlaying)

@@ -15,13 +15,15 @@ public class GUI_Demo : MonoBehaviour {
     private float musicVolume = 0f;
     Rect windowRect = new Rect (0, 0, 400, 210);
 	//string toggleTxt;
-	string stringtxt = "Volume";
+	string stringtxt = "SoundEffect";
     Scene scene;
+    private float musicvolume2 = 0f;
 
 	//string textToEdit = "TextBox:\nHello World\nI've got few lines...";
     float hSliderValue = 1.0f;
 	float vSliderValue = 0.0f;
 	float hSbarValue;
+	float hSliderValue2 = 1.0f;
 	float vSbarValue;
 	private List<GameObject> dundestory;
 	Vector2 scrollPosition = Vector2.zero;
@@ -67,12 +69,17 @@ public class GUI_Demo : MonoBehaviour {
         
 
         GUI.Label(new Rect(60, 80, 80, 20), stringtxt);
+        GUI.Label(new Rect(60, 120, 80, 20), "BGM");
+       // GUI.Label(new Rect(100, 80, 80, 20), stringtxt);
         //stringToEdit = GUI.TextField (new Rect (15, 140, 110, 20), stringToEdit, 25);
         
         hSliderValue = GUI.HorizontalSlider (new Rect (150, 80, 200, 30), GlobalOptions.volume, 0.0f, 1.0f);
         musicVolume = hSliderValue;
+        hSliderValue2 = GUI.HorizontalSlider (new Rect (150, 120, 200, 30), GlobalOptions.bgmvolume, 0.0f, 1.0f);
+        musicvolume2 = hSliderValue2;
         GlobalOptions.volume = musicVolume;
-        vSliderValue = GUI.VerticalSlider (new Rect (380, 40, 50, 150), vSliderValue, 100.0f, 0.0f);
+        GlobalOptions.bgmvolume = musicvolume2;
+      // vSliderValue = GUI.VerticalSlider (new Rect (380, 40, 50, 150), vSliderValue, 100.0f, 0.0f);
      
         
 
@@ -89,7 +96,7 @@ public class GUI_Demo : MonoBehaviour {
 		GUI.EndScrollView ();
 
 
-		//hSbarValue = GUI.HorizontalScrollbar (new Rect (10, 360, 360, 30), hSbarValue, 5.0f, 0.0f, 10.0f);
+		hSbarValue = GUI.HorizontalScrollbar (new Rect (10, 360, 360, 30), hSbarValue, 5.0f, 0.0f, 10.0f);
 		//vSbarValue = GUI.VerticalScrollbar(new Rect (380, 25, 30, 200), vSbarValue, 1.0f, 30.0f, 0.0f);
 
 
@@ -98,7 +105,7 @@ public class GUI_Demo : MonoBehaviour {
 
     void Update()
     {
-        audioSrc.volume = musicVolume;
+        //audioSrc.volume = musicVolume;
     }
 
 

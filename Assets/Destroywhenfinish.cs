@@ -21,6 +21,7 @@ public class Destroywhenfinish : MonoBehaviour
 
     private void Update()
     {
+        GetComponent<AudioSource>().volume = GlobalOptions.volume;
         if (!PS.IsAlive())
         {
             player.transform.position = new Vector3(0,0.15f,0);

@@ -43,6 +43,7 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetComponent<AudioSource>().volume = GlobalOptions.volume;
         //PickupSpeedBosster
         if (speedupItem)
         {

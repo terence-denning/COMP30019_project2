@@ -61,15 +61,17 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //volume
+        GetComponent<AudioSource>().volume = GlobalOptions.volume;
         playcam = GameObject.Find("PlayerCamera").GetComponent<Camera>();
         //PlayerStatusUpdate
-        if (ModifyStatus)
-        {
-            HM.MaximumHP(PS.stats[0].GetCalculateStat());
+       // if (ModifyStatus)
+        //{
+            //HM.MaximumHP(PS.stats[0].GetCalculateStat());
             Melee.damage = PS.stats[1].GetCalculateStat();
             gun.damage = PS.stats[2].GetCalculateStat();
-            ModifyStatus = false;
-        }
+            //ModifyStatus = false;
+        //}
         //OverKill Session
         if (OverKillBar >= 100)
         {

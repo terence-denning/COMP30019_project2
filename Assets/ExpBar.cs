@@ -17,7 +17,7 @@ public class ExpBar : MonoBehaviour
 
     void FixedUpdate ()
     {
-        
+        GetComponent<AudioSource>().volume = GlobalOptions.volume;
         Pb.BarValue=hm.currentexp;
         if (Pb.BarValue >= 99.5)
         {

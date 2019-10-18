@@ -24,19 +24,20 @@ public class SimpleEnemyMovement : MonoBehaviour
     private MeshRenderer render;
     private bool playaudio;
     private AudioSource AS;
+    public  GameObject healthbar ;
         private void OnEnable()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         navg = GetComponent<NavMeshAgent>();
         timer = wonder;
         AS = GetComponent<AudioSource>();
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        GetComponent<AudioSource>().volume = GlobalOptions.volume;
         if (playaudio &&! AS.isPlaying)
         {
             AS.Play();
@@ -44,19 +45,33 @@ public class SimpleEnemyMovement : MonoBehaviour
         }
         timer += Time.deltaTime;
         //Player in close range
-        if (isClose(player.transform.position, this.transform.position))
+        if (isClose(player.transform.position, this.transform.position,3))
         {
             navg.SetDestination(player.transform.position);
             playaudio = true;
+            if (IsExplode && isClose(player.transform.position, this.transform.position,1.2f))
+            {
+                if (healthbar != null)
+                {
+                    healthbar.SetActive(true);
+                }
+            }
+           
         }
         else
         {
             playaudio = false;
             AS.Stop();
         }
-
+        if (IsExplode && !isClose(player.transform.position, this.transform.position,1.2f))
+        {
+            if (healthbar != null)
+            {
+                healthbar.SetActive(false);
+            }
+        }
         
-        if (timer >= wonder && isClose(player.transform.position, this.transform.position) == false)
+        if (timer >= wonder && isClose(player.transform.position, this.transform.position,3) == false)
         {
             Vector3 newPos = RandomNavSphere(transform.position, radius, -1);
             navg.SetDestination(newPos);
@@ -92,9 +107,9 @@ public class SimpleEnemyMovement : MonoBehaviour
         return navHit.position;
     }
     
-    bool isClose(Vector3 obj1, Vector3 obj2)
+    bool isClose(Vector3 obj1, Vector3 obj2,float radius)
     {
-        if( (Math.Abs(obj1.x - obj2.x) < 3) && (Math.Abs(obj1.z - obj2.z) < 3))
+        if( (Math.Abs(obj1.x - obj2.x) < radius) && (Math.Abs(obj1.z - obj2.z) < radius))
         {
             return true;
         }

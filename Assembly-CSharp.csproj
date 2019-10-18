@@ -60,6 +60,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AddRoom.cs" />
+    <Compile Include="Assets\BGM.cs" />
+    <Compile Include="Assets\bgmvolume.cs" />
     <Compile Include="Assets\Boss2Movement.cs" />
     <Compile Include="Assets\Boss3Movement.cs" />
     <Compile Include="Assets\BossDead.cs" />
@@ -96,6 +98,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerPos.cs" />
     <Compile Include="Assets\Scripts\Player\PointLight.cs" />
     <Compile Include="Assets\SimpleEnemyMovement.cs" />
+    <Compile Include="Assets\slidervolume.cs" />
     <Compile Include="Assets\SpawnEnemy.cs" />
     <Compile Include="Assets\SpeedPotion.cs" />
     <Compile Include="Assets\Stat.cs" />

@@ -93,9 +93,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/LightShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/slidervolume.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Object/ObjectShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/destroyaudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BGM.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerSpwan.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Lab5_Solution/Assets/CubeScript.cs" root0="SKIP_HIGHLIGHTING" />
@@ -148,14 +150,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Boss2Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/DestropBGM.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/bgmvolume.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/GlobalOptions.cs" />
-        <option value="$PROJECT_DIR$/Assets/UI/DestropBGM.cs" />
-        <option value="$PROJECT_DIR$/Assets/Wander.cs" />
-        <option value="$PROJECT_DIR$/Assets/WanderAI.cs" />
         <option value="$PROJECT_DIR$/Assets/BakeAtRuntime.cs" />
         <option value="$PROJECT_DIR$/Assets/RoomSpwan.cs" />
         <option value="$PROJECT_DIR$/Assets/RoomTemp.cs" />
@@ -175,34 +174,38 @@
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/ClickController.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/MainMenuControllor.cs" />
         <option value="$PROJECT_DIR$/Assets/dunDestroy2.cs" />
-        <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/GUI_Demo.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/DestropBGM.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/PauseMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/SpeedAmount.cs" />
         <option value="$PROJECT_DIR$/Assets/UISkillpoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Object/ObjectShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Newlight.shader" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/StrengthAmount.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerStat.cs" />
         <option value="$PROJECT_DIR$/Assets/BossMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Boss2Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/EnergyBar.cs" />
         <option value="$PROJECT_DIR$/Assets/ExpSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/ExpBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Gun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/melee.cs" />
         <option value="$PROJECT_DIR$/Assets/ProjectileController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/SimpleEnemyMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/expolision.cs" />
-        <option value="$PROJECT_DIR$/Assets/Destroywhenfinish.cs" />
-        <option value="$PROJECT_DIR$/Assets/destroyaudio.cs" />
         <option value="$PROJECT_DIR$/Assets/InteractItem.cs" />
         <option value="$PROJECT_DIR$/Assets/RedPotion.cs" />
         <option value="$PROJECT_DIR$/Assets/SpeedPotion.cs" />
         <option value="$PROJECT_DIR$/Assets/level.cs" />
         <option value="$PROJECT_DIR$/Assets/rotatecamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Newlight.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Object/ObjectShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/SimpleEnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/expolision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Destroywhenfinish.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/melee.cs" />
+        <option value="$PROJECT_DIR$/Assets/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/ExpBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/destroyaudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/GlobalOptions.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/GUI_Demo.cs" />
+        <option value="$PROJECT_DIR$/Assets/slidervolume.cs" />
+        <option value="$PROJECT_DIR$/Assets/BGM.cs" />
+        <option value="$PROJECT_DIR$/Assets/bgmvolume.cs" />
       </list>
     </option>
   </component>
@@ -257,6 +260,7 @@
       <workItem from="1571197878689" duration="10159000" />
       <workItem from="1571299913475" duration="20452000" />
       <workItem from="1571324183507" duration="539000" />
+      <workItem from="1571360873822" duration="8146000" />
     </task>
     <servers />
   </component>

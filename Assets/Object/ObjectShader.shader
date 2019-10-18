@@ -67,7 +67,7 @@ Shader "Custom/ObjectShader"
 			{
 			    fixed4 albedo = tex2D(_MainTex, v.uv) * v.color;
 			    float distan = distance(_PlayerPos, v.worldVertex);
-                float radius = 1;
+                float radius = 1.2;
                  clip(radius - distan);              
                  return albedo ;
 

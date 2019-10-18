@@ -47,3 +47,5 @@ MonoBehaviour:
   spawnTime: 3.9
   spawnPoints:
   - {fileID: 7120902372650286032}
+  currentspwaned: 0
+  maxOfSpawn: 2
