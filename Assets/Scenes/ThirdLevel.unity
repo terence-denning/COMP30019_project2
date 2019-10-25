@@ -176,6 +176,7 @@ MonoBehaviour:
     type: 3}
   enemyspawnpoint2: {fileID: 4972029344336285379, guid: cb5a46f4c6f220c40829b163f00da3ac,
     type: 3}
+  closeRm: {fileID: 8788667260577076501, guid: 63dfd2132f71502439c41bbe91797ef5, type: 3}
 --- !u!4 &225210806
 Transform:
   m_ObjectHideFlags: 0

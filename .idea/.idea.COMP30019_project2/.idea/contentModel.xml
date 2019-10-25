@@ -6,80 +6,82 @@
     <e p="D:\COMP30019_project2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AddRoom.cs" t="Include" />
-        <e p="BGM.cs" t="Include" />
-        <e p="bgmvolume.cs" t="Include" />
-        <e p="Boss2Movement.cs" t="Include" />
-        <e p="Boss3Movement.cs" t="Include" />
-        <e p="BossDead.cs" t="Include" />
-        <e p="BossMovement.cs" t="Include" />
-        <e p="destroyaudio.cs" t="Include" />
-        <e p="Destroywhenfinish.cs" t="Include" />
-        <e p="dunDestroy2.cs" t="Include" />
-        <e p="EnemyDrop.cs" t="Include" />
-        <e p="EnemyShoot.cs" t="Include" />
-        <e p="ExpBar.cs" t="Include" />
-        <e p="expolision.cs" t="Include" />
-        <e p="ExpSystem.cs" t="Include" />
-        <e p="Gun.cs" t="Include" />
-        <e p="Interactable.cs" t="Include" />
-        <e p="InteractItem.cs" t="Include" />
-        <e p="level.cs" t="Include" />
-        <e p="LightShader.shader" t="Include" />
-        <e p="NavMeshComponents" t="Include">
-          <e p="Editor" t="Include">
-            <e p="NavMeshAssetManager.cs" t="Include" />
-            <e p="NavMeshComponentsEditor.asmdef" t="Include" />
-            <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
-            <e p="NavMeshLinkEditor.cs" t="Include" />
-            <e p="NavMeshModifierEditor.cs" t="Include" />
-            <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
-            <e p="NavMeshSurfaceEditor.cs" t="Include" />
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="BakeAtRuntime.cs" t="Include" />
-            <e p="NavMeshComponents.asmdef" t="Include" />
-            <e p="NavMeshLink.cs" t="Include" />
-            <e p="NavMeshModifier.cs" t="Include" />
-            <e p="NavMeshModifierVolume.cs" t="Include" />
-            <e p="NavMeshSurface.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Newlight.shader" t="Include" />
-        <e p="NPC.cs" t="Include" />
-        <e p="Object" t="Include">
-          <e p="Object.cs" t="Include" />
-          <e p="ObjectShader.shader" t="Include" />
-        </e>
-        <e p="PickItem.cs" t="Include" />
-        <e p="PlayerSpwan.cs" t="Include" />
-        <e p="PlayerStat.cs" t="Include" />
-        <e p="ProjectileController.cs" t="Include" />
-        <e p="RedPotion.cs" t="Include" />
-        <e p="RoomDestroyer.cs" t="Include" />
-        <e p="RoomSpwan.cs" t="Include" />
-        <e p="RoomTemp.cs" t="Include" />
-        <e p="rotatecamera.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AddRoom.cs" t="Include" />
+          <e p="BGM.cs" t="Include" />
+          <e p="bgmvolume.cs" t="Include" />
+          <e p="Boss2Movement.cs" t="Include" />
+          <e p="Boss3Movement.cs" t="Include" />
+          <e p="BossDead.cs" t="Include" />
+          <e p="BossMovement.cs" t="Include" />
+          <e p="destroyaudio.cs" t="Include" />
+          <e p="Destroywhenfinish.cs" t="Include" />
+          <e p="dunDestroy2.cs" t="Include" />
           <e p="Enemy" t="Include">
             <e p="EnemyControl.cs" t="Include" />
             <e p="EnemyManager.cs" t="Include" />
           </e>
+          <e p="EnemyDrop.cs" t="Include" />
+          <e p="EnemyShoot.cs" t="Include" />
+          <e p="ExpBar.cs" t="Include" />
+          <e p="expolision.cs" t="Include" />
+          <e p="ExpSystem.cs" t="Include" />
+          <e p="Gun.cs" t="Include" />
           <e p="HealthManager.cs" t="Include" />
+          <e p="Interactable.cs" t="Include" />
+          <e p="InteractItem.cs" t="Include" />
+          <e p="level.cs" t="Include" />
+          <e p="LightShader.shader" t="Include" />
           <e p="melee.cs" t="Include" />
+          <e p="NavMeshComponents" t="Include">
+            <e p="Editor" t="Include">
+              <e p="NavMeshAssetManager.cs" t="Include" />
+              <e p="NavMeshComponentsEditor.asmdef" t="Include" />
+              <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+              <e p="NavMeshLinkEditor.cs" t="Include" />
+              <e p="NavMeshModifierEditor.cs" t="Include" />
+              <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+              <e p="NavMeshSurfaceEditor.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="BakeAtRuntime.cs" t="Include" />
+              <e p="NavMeshComponents.asmdef" t="Include" />
+              <e p="NavMeshLink.cs" t="Include" />
+              <e p="NavMeshModifier.cs" t="Include" />
+              <e p="NavMeshModifierVolume.cs" t="Include" />
+              <e p="NavMeshSurface.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Newlight.shader" t="Include" />
+          <e p="NPC.cs" t="Include" />
+          <e p="Object" t="Include">
+            <e p="Object.cs" t="Include" />
+            <e p="ObjectShader.shader" t="Include" />
+          </e>
+          <e p="PickItem.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="DiaobleCam.cs" t="Include" />
             <e p="PlayerControl.cs" t="Include" />
             <e p="PlayerPos.cs" t="Include" />
             <e p="PointLight.cs" t="Include" />
           </e>
+          <e p="PlayerSpwan.cs" t="Include" />
+          <e p="PlayerStat.cs" t="Include" />
+          <e p="ProjectileController.cs" t="Include" />
+          <e p="RedPotion.cs" t="Include" />
+          <e p="RoomDestroyer.cs" t="Include" />
+          <e p="RoomSpwan.cs" t="Include" />
+          <e p="RoomTemp.cs" t="Include" />
+          <e p="rotatecamera.cs" t="Include" />
+          <e p="SimpleEnemyMovement.cs" t="Include" />
+          <e p="slidervolume.cs" t="Include" />
+          <e p="SpawnEnemy.cs" t="Include" />
+          <e p="SpeedPotion.cs" t="Include" />
+          <e p="Stat.cs" t="Include" />
+          <e p="StateBonus.cs" t="Include" />
+          <e p="UISkillpoint.cs" t="Include" />
+          <e p="WanderAI.cs" t="Include" />
         </e>
-        <e p="SimpleEnemyMovement.cs" t="Include" />
-        <e p="slidervolume.cs" t="Include" />
-        <e p="SpawnEnemy.cs" t="Include" />
-        <e p="SpeedPotion.cs" t="Include" />
-        <e p="Stat.cs" t="Include" />
-        <e p="StateBonus.cs" t="Include" />
         <e p="UI" t="Include">
           <e p="UI" t="Include">
             <e p="ShieldBarCircle" t="Include">
@@ -106,8 +108,6 @@
             </e>
           </e>
         </e>
-        <e p="UISkillpoint.cs" t="Include" />
-        <e p="WanderAI.cs" t="Include" />
       </e>
       <e p="COMP30019_project2.sln" t="IncludeFlat" />
       <e p="NavMeshComponents.csproj" t="IncludeRecursive" />

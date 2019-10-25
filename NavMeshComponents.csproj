@@ -59,12 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\NavMeshComponents\Scripts\BakeAtRuntime.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
-    <None Include="Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
+    <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\BakeAtRuntime.cs" />
+    <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshLink.cs" />
+    <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+    <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+    <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+    <None Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
