@@ -13,9 +13,9 @@ public class RoomSpwan : MonoBehaviour
     //4 right
     private RoomTemp template;
     private int ran;
-
-    private bool spawned = false;
-    public float waittime = 4f;
+    private float cur;
+    public bool spawned = false;
+    public float waittime = 500f;
 
     
 
@@ -23,60 +23,69 @@ public class RoomSpwan : MonoBehaviour
     {
         Destroy(gameObject,waittime);
         template = GameObject.FindGameObjectWithTag("Room").GetComponent<RoomTemp>();
-        Invoke("Spwan",0.1f);
+        Invoke("Spwan",0.01f);
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-       /* if (other.CompareTag("SpwanPoint"))
+        if (cur > waittime)
         {
-            if (other.GetComponent<RoomSpwan>().spawned == false && spawned == false)
-            {
-                Instantiate(template.closeRm, transform.position, Quaternion.identity);
-                Destroy(gameObject);
-            }
+            if (other.CompareTag("SpwanPoint"))
+                    {
+                        if (other.GetComponent<RoomSpwan>().spawned == false && spawned == false)
+                        {
+                            if (template.closeRm != null) Instantiate(template.closeRm, transform.position, Quaternion.identity);
+                            Destroy(this.gameObject);
+                        }
+                        spawned = true;
+                    }
+        }
+        else
+        {
+            cur++;
+        }
+        
 
-            spawned = true;
-
-        }*/
-
-           Destroy(this.gameObject);
+           //Destroy(this.gameObject);
 
     }
 
 
     void Spwan()
     {
-        if(spawned == false)
-        { 
-            if (openningDirection == 1)
+        if (spawned == false)
             {
-                ran = Random.Range(0, template.bottomRm.Length);
-                Instantiate(template.bottomRm[ran], transform.position, template.bottomRm[ran].transform.rotation);
-               
-            }
-            else if (openningDirection == 2)
-            {
-                ran = Random.Range(0, template.topRm.Length);
-                Instantiate(template.topRm[ran], transform.position, template.topRm[ran].transform.rotation);
-                
+                if (openningDirection == 1)
+                {
+                    ran = Random.Range(0, template.bottomRm.Length);
+                    Instantiate(template.bottomRm[ran], transform.position, template.bottomRm[ran].transform.rotation);
 
-            }
-            else if (openningDirection == 3)
-            {
-                ran = Random.Range(0, template.leftRm.Length);
-                Instantiate(template.leftRm[ran], transform.position, template.leftRm[ran].transform.rotation);
+                }
+                else if (openningDirection == 2)
+                {
+                    ran = Random.Range(0, template.topRm.Length);
+                    Instantiate(template.topRm[ran], transform.position, template.topRm[ran].transform.rotation);
+
+
+                }
+                else if (openningDirection == 3)
+                {
+                    ran = Random.Range(0, template.leftRm.Length);
+                    Instantiate(template.leftRm[ran], transform.position, template.leftRm[ran].transform.rotation);
+
+                }
+                else if (openningDirection == 4)
+                {
+                    ran = Random.Range(0, template.rightRm.Length);
+                    Instantiate(template.rightRm[ran], transform.position, template.rightRm[ran].transform.rotation);
+
+                }
+
+                spawned = true;
               
             }
-            else if (openningDirection == 4)
-            {
-                ran = Random.Range(0, template.rightRm.Length);
-                Instantiate(template.rightRm[ran], transform.position, template.rightRm[ran].transform.rotation);
-               
-            }
-            spawned = true;
-        }
-    }
+        
+}
 
 
 }

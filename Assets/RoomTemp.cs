@@ -18,6 +18,7 @@ public class RoomTemp : MonoBehaviour
     public GameObject boss;
     public GameObject enemyspawnpoint1;
     public GameObject enemyspawnpoint2;
+    public GameObject closeRm;
     private void Update()
     {
         if (waittime <= 0 && spwanpointT == false)

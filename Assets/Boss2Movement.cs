@@ -92,6 +92,6 @@ public class Boss2Movement : MonoBehaviour
         {
             zMov = -2.0f;
         }
-        rb.AddForce(xMov, 0, zMov);
+        rb.AddForce(xMov*20, 0, zMov*20);
     }
 }

@@ -9,6 +9,7 @@ public class ClickController : MonoBehaviour
     static bool GameIsPause = false;
     public GameObject pauseMenuUI;
     public GameObject player;
+    public GameObject text;
     public GameObject[] button;
     // Start is called before the first frame update
 
@@ -28,6 +29,7 @@ public class ClickController : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        text.SetActive(true);
         Time.timeScale = 1.0f;
         GameIsPause = false;
         foreach (var x in button)
@@ -38,7 +40,9 @@ public class ClickController : MonoBehaviour
     }
     void Pause()
     {
+        
         pauseMenuUI.SetActive(true);
+        text.SetActive(false);
         Time.timeScale =0.0f;
         GameIsPause = true;
         if (player.GetComponent<ExpSystem>().modifiy == true)

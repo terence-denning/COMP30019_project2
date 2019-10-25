@@ -129,6 +129,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/SpeedAmount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/GUI_Demo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/GlobalOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RoomDestroyer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/dunDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/OptionsControllor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/UI/UI_CScript/BGMgenerator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -155,9 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/BakeAtRuntime.cs" />
-        <option value="$PROJECT_DIR$/Assets/RoomSpwan.cs" />
-        <option value="$PROJECT_DIR$/Assets/RoomTemp.cs" />
         <option value="$PROJECT_DIR$/Assets/Boss3Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/PushBack.cs" />
         <option value="$PROJECT_DIR$/Assets/Object/Object.cs" />
@@ -181,7 +179,6 @@
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/StrengthAmount.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerStat.cs" />
         <option value="$PROJECT_DIR$/Assets/BossMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Boss2Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/EnergyBar.cs" />
         <option value="$PROJECT_DIR$/Assets/ExpSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/ProjectileController.cs" />
@@ -206,6 +203,10 @@
         <option value="$PROJECT_DIR$/Assets/slidervolume.cs" />
         <option value="$PROJECT_DIR$/Assets/BGM.cs" />
         <option value="$PROJECT_DIR$/Assets/bgmvolume.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomTemp.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomDestroyer.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomSpwan.cs" />
+        <option value="$PROJECT_DIR$/Assets/Boss2Movement.cs" />
       </list>
     </option>
   </component>
@@ -261,6 +262,7 @@
       <workItem from="1571299913475" duration="20452000" />
       <workItem from="1571324183507" duration="539000" />
       <workItem from="1571360873822" duration="8146000" />
+      <workItem from="1572014041227" duration="4503000" />
     </task>
     <servers />
   </component>

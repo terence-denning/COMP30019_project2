@@ -8352,7 +8352,7 @@ GameObject:
   - component: {fileID: 1477674752950136047}
   m_Layer: 0
   m_Name: SpwanPoint (1)
-  m_TagString: SpwanPoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
