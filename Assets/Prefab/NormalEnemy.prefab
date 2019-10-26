@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: be460b00b8b5ee74182768397653747b, type: 3}
-  maintex: {fileID: 2800000, guid: b054120c308283b48aed79e331673473, type: 3}
+  maintex: {fileID: 2800000, guid: 23b0cc884053d944da5494fcb7a7139f, type: 3}
   pointLight: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &5466018910045935729

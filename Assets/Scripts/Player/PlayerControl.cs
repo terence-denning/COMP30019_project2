@@ -65,13 +65,8 @@ public class PlayerControl : MonoBehaviour
         GetComponent<AudioSource>().volume = GlobalOptions.volume;
         playcam = GameObject.Find("PlayerCamera").GetComponent<Camera>();
         //PlayerStatusUpdate
-       // if (ModifyStatus)
-        //{
-            //HM.MaximumHP(PS.stats[0].GetCalculateStat());
-            Melee.damage = PS.stats[1].GetCalculateStat();
-            gun.damage = PS.stats[2].GetCalculateStat();
-            //ModifyStatus = false;
-        //}
+        Melee.damage = PS.stats[1].GetCalculateStat();
+        gun.damage = PS.stats[2].GetCalculateStat();
         //OverKill Session
         if (OverKillBar >= 100)
         {

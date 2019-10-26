@@ -4,6 +4,7 @@ Shader "Unlit/Newlight"
 {
     Properties
 	{
+	    
 		//_PointLightColor("Point Light Color", Color) = (0, 0, 0)
 		//_PointLightPosition("Point Light Position", Vector) = (0.0, 0.0, 0.0)
 		_Color("Color",Color) = (0, 0, 0)
@@ -18,17 +19,18 @@ Shader "Unlit/Newlight"
 			#pragma fragment frag
 
 			#include "UnityCG.cginc"
-
+             sampler2D _MainTex;
 			float3 _PointLightColor;
 			float3 _PointLightPosition;
 			float _LightRange = 3;
 			float3 _Color;
-
+             float4 _MainTex_ST;
 			struct vertIn
 			{
 				float4 vertex : POSITION;
 				float4 normal : NORMAL;
 				float4 color : COLOR;
+				float2 uv : TEXCOORD2;
 			};
 
 			struct vertOut
@@ -37,6 +39,7 @@ Shader "Unlit/Newlight"
 				float4 color : COLOR;
 				float4 worldVertex : TEXCOORD0;
 				float3 worldNormal : TEXCOORD1;
+				float2 uv : TEXCOORD2;
 			};
 
 			// Implementation of the vertex shader
@@ -59,13 +62,14 @@ Shader "Unlit/Newlight"
 				// in the fragment shader (and utilised)
 				o.worldVertex = worldVertex;
 				o.worldNormal = worldNormal;
-
+                o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				return o;
 			}
 
 			// Implementation of the fragment shader
 			fixed4 frag(vertOut v) : SV_Target
 			{
+			     fixed4 albedo = tex2D(_MainTex, v.uv) * v.color;
 				float3 interpNormal = normalize(v.worldNormal);
                 float dist = distance(_PointLightPosition,v.worldVertex);
                 float attenuation = 1 - saturate(dist / _LightRange); 
@@ -83,7 +87,7 @@ Shader "Unlit/Newlight"
 				float3 H = normalize(V + L);
 				float3 spe = fAtt * _PointLightColor.rgb * Ks * pow(saturate(dot(interpNormal, H)), specN);
 				float4 returnColor = float4(0.0f, 0.0f, 0.0f, 0.0f);
-				returnColor.rgb = attenuation*(amb.rgb + dif.rgb + spe.rgb);
+				returnColor.rgb = attenuation*(amb.rgb + dif.rgb + spe.rgb+albedo.rgb);
 				returnColor.a = v.color.a;
 
 				return returnColor;

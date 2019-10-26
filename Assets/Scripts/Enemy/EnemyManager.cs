@@ -13,9 +13,5 @@ public class EnemyManager : MonoBehaviour
         simpleEnemy.transform.localPosition += new Vector3(0, 10.0f, 0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

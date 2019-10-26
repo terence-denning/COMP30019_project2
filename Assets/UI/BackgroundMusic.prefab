@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1062000081097166405}
   - component: {fileID: 1062000081097166404}
   - component: {fileID: 1062000081097166406}
-  - component: {fileID: 1062000081097166407}
   - component: {fileID: 7022111724670946379}
   m_Layer: 0
   m_Name: BackgroundMusic
@@ -143,18 +142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guiSkin: {fileID: 11400000, guid: fcb67abced501514cad4c513834fe748, type: 2}
---- !u!114 &1062000081097166407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062000081097166427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8e12cc94c327843ac22ee9906671e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7022111724670946379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,3 +154,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390fee302f4c57140ad3d11afd1bb1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objs: []
