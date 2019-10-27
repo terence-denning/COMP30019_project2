@@ -14,12 +14,11 @@ public class GUI_Demo : MonoBehaviour {
 
     private float musicVolume = 0f;
     Rect windowRect = new Rect (0, 0, 400, 210);
-	//string toggleTxt;
+
 	string stringtxt = "SoundEffect";
     Scene scene;
     private float musicvolume2 = 0f;
 
-	//string textToEdit = "TextBox:\nHello World\nI've got few lines...";
     float hSliderValue = 1.0f;
 	float vSliderValue = 0.0f;
 	float hSbarValue;
@@ -70,8 +69,7 @@ public class GUI_Demo : MonoBehaviour {
 
         GUI.Label(new Rect(60, 80, 80, 20), stringtxt);
         GUI.Label(new Rect(60, 120, 80, 20), "BGM");
-       // GUI.Label(new Rect(100, 80, 80, 20), stringtxt);
-        //stringToEdit = GUI.TextField (new Rect (15, 140, 110, 20), stringToEdit, 25);
+      
         
         hSliderValue = GUI.HorizontalSlider (new Rect (150, 80, 200, 30), GlobalOptions.volume, 0.0f, 1.0f);
         musicVolume = hSliderValue;
@@ -79,13 +77,7 @@ public class GUI_Demo : MonoBehaviour {
         musicvolume2 = hSliderValue2;
         GlobalOptions.volume = musicVolume;
         GlobalOptions.bgmvolume = musicvolume2;
-      // vSliderValue = GUI.VerticalSlider (new Rect (380, 40, 50, 150), vSliderValue, 100.0f, 0.0f);
-     
-        
 
-
-        //toggleTxt = GUI.TextField(new Rect(165, 50, 100, 30), toggleTxt, "A Toggle text");
-        //textToEdit = GUI.TextArea (new Rect (165, 90, 185, 100), textToEdit, 200);
 
         GUI.Label (new Rect (180, 215, 100, 20), "ScrollView");
 		scrollPosition = GUI.BeginScrollView (new Rect (180,235,160,100), scrollPosition, new Rect (0, 0, 220, 200));
@@ -97,16 +89,10 @@ public class GUI_Demo : MonoBehaviour {
 
 
 		hSbarValue = GUI.HorizontalScrollbar (new Rect (10, 360, 360, 30), hSbarValue, 5.0f, 0.0f, 10.0f);
-		//vSbarValue = GUI.VerticalScrollbar(new Rect (380, 25, 30, 200), vSbarValue, 1.0f, 30.0f, 0.0f);
-
-
-		//GUI.DragWindow (new Rect (0,0,10000,10000));
+		
 	}
 
-    void Update()
-    {
-        //audioSrc.volume = musicVolume;
-    }
+
 
 
 
