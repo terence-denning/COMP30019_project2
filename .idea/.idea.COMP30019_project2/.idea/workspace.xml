@@ -127,7 +127,6 @@
         <option value="$PROJECT_DIR$/Assets/RoomSpwan.cs" />
         <option value="$PROJECT_DIR$/Assets/Boss2Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/UI/UI_CScript/ClickController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RoomSpwan.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/rotatecamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Newlight.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyControl.cs" />
@@ -139,6 +138,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BossMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PointLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Object/Object.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RoomSpwan.cs" />
       </list>
     </option>
   </component>
@@ -198,6 +198,7 @@
       <workItem from="1572019724220" duration="2227000" />
       <workItem from="1572092807655" duration="1973000" />
       <workItem from="1572148025253" duration="465000" />
+      <workItem from="1572149088166" duration="319000" />
     </task>
     <servers />
   </component>

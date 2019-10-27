@@ -36,19 +36,25 @@ public class Boss2Movement : MonoBehaviour
         render.material.SetColor("_Color",lerpcolor);
         // chase player
         GameObject player = GameObject.Find("Player");
-        Vector3 dir = (player.transform.position - transform.position).normalized;
-        if (isClose(player.transform.position, this.transform.position))
+        if (player != null)
         {
-            chasePlayer(player.transform.position);
-            if (teleportinterval > 300)
+            Vector3 dir = (player.transform.position - transform.position).normalized;
+            if (isClose(player.transform.position, this.transform.position))
             {
-                Vector3 dpos = transform.position + dir;
-                dpos.y = transform.position.y;
-                Debug.Log("TelepotR!");
-                transform.position = dpos ;
-                teleportinterval = 0;
-            } teleportinterval++;
+                chasePlayer(player.transform.position);
+                if (teleportinterval > 300)
+                {
+                    Vector3 dpos = transform.position + dir;
+                    dpos.y = transform.position.y;
+                    Debug.Log("TelepotR!");
+                    transform.position = dpos;
+                    teleportinterval = 0;
+                }
+
+                teleportinterval++;
+            }
         }
+
         resetOnFall();
         
         

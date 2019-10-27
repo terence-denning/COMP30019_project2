@@ -24,7 +24,7 @@ public class RoomSpwan : MonoBehaviour
     {
         Destroy(gameObject,waittime);
         template = GameObject.FindGameObjectWithTag("Room").GetComponent<RoomTemp>();
-        Invoke("Spwan",0.5f);
+        Invoke("Spwan",0.1f);
     }
 
     void OnTriggerStay(Collider other)
