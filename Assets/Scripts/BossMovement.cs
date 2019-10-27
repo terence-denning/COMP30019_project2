@@ -38,34 +38,37 @@ public class BossMovement : MonoBehaviour
 
         // chase player
         GameObject player = GameObject.Find("Player");
-
-        if (isClose(player.transform.position, this.transform.position))
+        if (player != null)
         {
-            chasePlayer(player.transform.position);
+            if (isClose(player.transform.position, this.transform.position))
+            {
+                chasePlayer(player.transform.position);
+            }
+
+
+            // shoot bullets at intervals
+            if (time > lastBullet)
+            {
+                time = 0;
+                temppos = new Vector3(transform.position.x, 0.2f, transform.position.z);
+                ProjectileController p1 = Instantiate<ProjectileController>(projectilePrefab);
+                p1.transform.position = temppos;
+                p1.velocity = (transform.forward).normalized * 2.0f;
+
+                ProjectileController p2 = Instantiate<ProjectileController>(projectilePrefab);
+                p2.transform.position = temppos;
+                p2.velocity = (-transform.forward).normalized * 2.0f;
+
+                ProjectileController p3 = Instantiate<ProjectileController>(projectilePrefab);
+                p3.transform.position = temppos;
+                p3.velocity = (transform.right).normalized * 2.0f;
+
+                ProjectileController p4 = Instantiate<ProjectileController>(projectilePrefab);
+                p4.transform.position = temppos;
+                p4.velocity = (-transform.right).normalized * 2.0f;
+            }
         }
 
-
-        // shoot bullets at intervals
-        if (time > lastBullet)
-        {
-            time = 0;
-            temppos = new Vector3(transform.position.x, 0.2f,transform.position.z);
-            ProjectileController p1 = Instantiate<ProjectileController>(projectilePrefab);
-            p1.transform.position = temppos;
-            p1.velocity = (transform.forward).normalized * 2.0f;
-
-            ProjectileController p2 = Instantiate<ProjectileController>(projectilePrefab);
-            p2.transform.position = temppos;
-            p2.velocity = (-transform.forward).normalized * 2.0f;
-
-            ProjectileController p3 = Instantiate<ProjectileController>(projectilePrefab);
-            p3.transform.position =temppos;
-            p3.velocity = (transform.right).normalized * 2.0f;
-
-            ProjectileController p4 = Instantiate<ProjectileController>(projectilePrefab);
-            p4.transform.position = temppos;
-            p4.velocity = (-transform.right).normalized * 2.0f;
-        }
         time++;
     }
 

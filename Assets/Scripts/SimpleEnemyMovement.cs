@@ -45,38 +45,42 @@ public class SimpleEnemyMovement : MonoBehaviour
         }
         timer += Time.deltaTime;
         //Player in close range
-        if (isClose(player.transform.position, this.transform.position,3))
+        if (player != null)
         {
-            navg.SetDestination(player.transform.position);
-            playaudio = true;
-            if (IsExplode && isClose(player.transform.position, this.transform.position,1.2f))
+            if (isClose(player.transform.position, this.transform.position, 3))
+            {
+                navg.SetDestination(player.transform.position);
+                playaudio = true;
+                if (IsExplode && isClose(player.transform.position, this.transform.position, 1.2f))
+                {
+                    if (healthbar != null)
+                    {
+                        healthbar.SetActive(true);
+                    }
+                }
+
+            }
+            else
+            {
+                playaudio = false;
+                AS.Stop();
+            }
+
+            if (IsExplode && !isClose(player.transform.position, this.transform.position, 1.2f))
             {
                 if (healthbar != null)
                 {
-                    healthbar.SetActive(true);
+                    healthbar.SetActive(false);
                 }
             }
-           
-        }
-        else
-        {
-            playaudio = false;
-            AS.Stop();
-        }
-        if (IsExplode && !isClose(player.transform.position, this.transform.position,1.2f))
-        {
-            if (healthbar != null)
+
+            if (timer >= wonder && isClose(player.transform.position, this.transform.position, 3) == false)
             {
-                healthbar.SetActive(false);
+                Vector3 newPos = RandomNavSphere(transform.position, radius, -1);
+                navg.SetDestination(newPos);
+                timer = 0;
+                reset = true;
             }
-        }
-        
-        if (timer >= wonder && isClose(player.transform.position, this.transform.position,3) == false)
-        {
-            Vector3 newPos = RandomNavSphere(transform.position, radius, -1);
-            navg.SetDestination(newPos);
-            timer = 0;
-            reset = true;
         }
     }
 

@@ -35,10 +35,18 @@ public class Object : MonoBehaviour
     {
        
         Renderer renderer = this.gameObject.GetComponent<Renderer>();
-        renderer.material.SetColor("_PointLightColor", this.pointLight.color);
-        renderer.material.SetVector("_PointLightPosition", this.pointLight.GetWorldPosition());
+        if (pointLight != null)
+        {
+            renderer.material.SetColor("_PointLightColor", this.pointLight.color);
+            renderer.material.SetVector("_PointLightPosition", this.pointLight.GetWorldPosition());
+        }
+        
         renderer.material.SetVector("_Worldpos", transform.position);
-        renderer.material.SetVector("_PlayerPos", player.transform.position);
+        if (player != null)
+        {
+            renderer.material.SetVector("_PlayerPos", player.transform.position);
+        }
+        
         if (feedback && curtime< timeoffeedback)
         {
             renderer.material.SetTexture("_MainTex",Texture2D.whiteTexture);

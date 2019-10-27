@@ -8,7 +8,7 @@ public class PointLight : MonoBehaviour {
     public float LightRange = 0;
     public Vector3 GetWorldPosition()
     {
-        return this.transform.position;
+       return this.transform.position;
     }
 
     private void Update()

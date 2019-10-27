@@ -37,8 +37,9 @@ public class PlayerControl : MonoBehaviour
     //GameOver
     public void GameOver()
     {
-        dunDestroy.DestroyAll();
+        
         SceneManager.LoadScene("GameEnded");
+        dunDestroy.DestroyAll();
     }
     public void IncreaseOverKill(float amount)
     {

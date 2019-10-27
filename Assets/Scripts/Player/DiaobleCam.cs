@@ -21,8 +21,10 @@ public class DiaobleCam : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         Vector3 dpos;
-        
-        dpos = player.transform.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, dpos, ref velocity ,  0.3f);
+        if (player != null)
+        { 
+            dpos = player.transform.position + offset;
+        transform.position = Vector3.SmoothDamp(transform.position, dpos, ref velocity, 0.3f);
+        }
     }
 }
